@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: nimbus;
+    src: url(../build/assets/fonts/NimbusSanL-Bold.ttf);
+  }
+  .nimbus{
+    font-family: nimbus;
+  }
+  @font-face {
+    font-family: Ogg;
+    src: url(../build/assets/fonts/ogg-font-family-1708668328-0/Ogg-ThinItalic-BF646c18fc568b1.ttf);
+  }
+  .Ogg{
+    font-family: Ogg;
+  }
+  
