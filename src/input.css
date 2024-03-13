@@ -16,4 +16,10 @@
   .Ogg{
     font-family: Ogg;
   }
+
+  /* @media screen and (min-width: 320px) {
+    .header {
+      background-position:center !important;
+    }
+  } */
   

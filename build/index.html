@@ -1,175 +1,402 @@
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <title>header</title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
-    </head>
-    <body class="bg-white">
-        <!-- Header -->
-        <br />
-        <br />
-        <br />
-        <!-- Hero Section -->
-        <section class="text-center">
-            <div
-                class="relative min-h-screen w-full flex items-end justify-start text-left bg-no-repeat bg-cover"
-                style="background-image: url(./assets/imgs/img.png)"
-            >
-                <div class="p-5 z-10 justify-start">
-                    <div class="flex text-white items-center">
-                        <p>Sep 2, 2022</p>
-                        <img
-                            src="./assets/imgs/circle.png"
-                            alt=""
-                            class="ml-5"
-                        />
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>header</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body class="bg-white">
+    <!-- ======================NAVBAR START HERE=============== -->
+    <div class="header bg-black text-center flex justify-center">
+      <div class="p-5">
+        <img src="./assets/imgs/Logo.png" alt="" class="h-[65px]" />
+      </div>
+    </div>
 
-                        <p class="ml-2">Fashion</p>
-                    </div>
-                    <a
-                        href="#"
-                        class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
-                    >
-                        FENDI <span class="Ogg">X BENZEMA</span>
-                    </a>
-                </div>
+    <!-- Navigation Bar -->
+    <nav class="bg-black text-white p-4">
+      <!-- Container for Centering -->
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Navigation Links -->
+        <div class="flex items-center">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="p-2 border border-gray-700 rounded-md focus:outline-none"
+          />
+          <button class="ml-2 focus:outline-none">
+            <img src="./assets/imgs/search_icon.png" alt="" />
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-xl focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-4">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">About</a>
+          <a href="#" class="hover:text-gray-300">Services</a>
+          <a href="#" class="hover:text-gray-300">Contact</a>
+        </div>
+      </div>
+      <!-- End Container -->
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
+      <a href="#" class="block py-2">Home</a>
+      <a href="#" class="block py-2">About</a>
+      <a href="#" class="block py-2">Services</a>
+      <a href="#" class="block py-2">Contact</a>
+    </div>
+
+    <!-- ======================NAVBAR END HERE=============== -->
+
+    <!-- hero section end -->
+    <section class="text-center">
+      <div
+        class="relative header min-h-screen w-full flex items-end justify-start text-left bg-no-repeat bg-cover object-cover"
+        style="background-image: url(./assets/imgs/img.png)"
+      >
+        <div class="p-5 z-10 justify-start">
+          <div class="flex text-white items-center">
+            <p>Sep 2, 2022</p>
+            <img src="./assets/imgs/circle.png" alt="" class="ml-5" />
+
+            <p class="ml-2">Fashion</p>
+          </div>
+          <a
+            href="#"
+            class="md:text-4xl text-xl tracking-tight leading-10 font-bold text-white"
+          >
+            FENDI
+            <span class="font-normal">X</span>
+            <span class="nimbus font-normal italic"> BENZEMA</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- video section start -->
+    <section class="text-center relative md:mt-14 mt-3">
+      <div
+        class="min-h-screen w-full flex items-end justify-start text-left bg-cover bg-center relative"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          class="object-cover w-full h-full absolute inset-0"
+        >
+          <source src="./assets/imgs/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="p-5 z-10 absolute bottom-0 left-0 right-0">
+          <div class="flex text-white items-center">
+            <p>Sep 2, 2022</p>
+            <img src="./assets/imgs/circle.png" alt="" class="ml-5" />
+
+            <p class="ml-2">Fashion</p>
+          </div>
+          <a
+            href="#"
+            class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
+          >
+            Making of Vogue arabia june 2023
+            <span class="Ogg">saudi issue</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- video section end -->
+
+    <!-- Google Add Section -->
+    <section class="text-center md:mt-9 mt-3">
+      <div
+        class="p-5 w-full flex items-end justify-start text-left bg-cover bg-center"
+      >
+        <img src="./assets/imgs/GOOGLEADD.png" alt="" class="w-full" />
+      </div>
+    </section><br><br>
+    <!-- Google Add section end -->
+
+
+
+
+ <!-- ============== RELETED BLOG DETAIL SECTION  START HERE========== -->
+ <section>
+  <div class="bg-bg-black">
+    <div class="md:p-10 p-5">
+      <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg md:mb-7 mb-5">Related Blogs</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper gap-5">
+          <div class="swiper-slide">
+            <div class="bg-text-white relative">
+              <div class="p-5">
+                  <div class="relative">
+                      <img src="../build/assets/imgs/modal1.png" alt="" class="w-full" />
+                      <div class=" absolute bottom-0 left-0 p-4">
+                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
+                          <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-white uppercase">Dior Dior dior</h1>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-text-white relative">
+              <div class="p-5">
+                  <div class="relative">
+                      <img src="../build/assets/imgs/swiper2.png" alt="" class="w-full" />
+                      <div class=" absolute bottom-0 left-0 p-4">
+                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
+                          <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-white uppercase">Dior Spring Summer</h1>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-text-white relative">
+              <div class="p-5">
+                  <div class="">
+                      <img src="../build/assets/imgs/swiper3.png" alt="" class="w-full" />
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-text-white relative">
+              <div class="p-5">
+                  <div class="relative">
+                      <img src="../build/assets/imgs/modal1.png" alt="" class="w-full" />
+                      <div class=" absolute bottom-0 left-0 p-4">
+                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
+                          <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-white uppercase">Dior Dior dior</h1>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+         
+          
+        
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="p-[5%]">
+      <div class="text-center flex items-center flex-col">
+        <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg">join our community</h1>
+        <p class="nimbus font-normal md:text-lg text-[12px] text-text-white pt-5">Join our exclusive community and elevate your lifestyle with AMDmode: where elegance meets intelligence and <br>sophistication transcends convention.</p>
+
+
+        <form class="md:w-3/5 w-full md:pt-10 pt-5">
+          <div class="flex items-center border-b border-whie py-2 justify-between">
+            <input class="capitalize appearance-none bg-transparent border-none w-3/5 text-white  py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="enter your email" aria-label="email">
+            <button class="flex-shrink-0 bg-white text-black text-sm   md:px-10 px-5 md:py-3 py-2 uppercase nimbus font-normal md:text-lg " type="button">
+              Subscribe
+            </button>
+            
+          </div>
+        </form>
+     
+      </div>
+
+    </div>
+  </div>
+</section><br><br>
+<!-- ============== RELETED BLOG DETAIL SECTION  END HERE========== -->
+
+
+    <!-- blog1 Section -->
+    <section class="text-center md:mt-9 mt-3">
+      <div
+        class="relative min-h-screen w-full flex items-end justify-start text-left bg-cover bg-no-repeat md:bg-center-none bg-center"
+        style="background-image: url(./assets/imgs/img2.png)"
+      >
+        <div class="p-5 z-10 justify-start">
+          <div class="flex text-white items-center">
+            <p>Sep 2, 2022</p>
+            <img src="./assets/imgs/circle.png" alt="" class="ml-5" />
+
+            <p class="ml-2">Fashion</p>
+          </div>
+          <a
+            href="#"
+            class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
+          >
+            DIOR DIOR
+            <span class="Ogg">DIOR</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- blog1 section end -->
+
+    <!-- blog1 Section -->
+    <section class="text-center md:mt-9 mt-3">
+      <div
+        class="relative min-h-screen w-full flex items-end justify-start text-left bg-cover bg-no-repeat md:bg-center-none bg-center"
+        style="background-image: url(./assets/imgs/img3.png)"
+      >
+        <div class="p-5 z-10 justify-start">
+          <div class="flex text-white items-center">
+            <p>Sep 2, 2022</p>
+            <img src="./assets/imgs/circle.png" alt="" class="ml-5" />
+
+            <p class="ml-2">Fashion</p>
+          </div>
+          <a
+            href="#"
+            class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
+          >
+            VALENTINO IN
+            <span class="Ogg">MILANO</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- blog1 section end -->
+
+    <!-- Google Add Section -->
+    <section class="text-center md:mt-9 mt-3">
+      <div
+        class="p-5 w-full flex items-end justify-start text-left bg-cover bg-center"
+      >
+        <img src="./assets/imgs/GOOGLEADD.png" alt="" class="w-full" />
+      </div>
+    </section>
+    <!-- Google Add section end -->
+
+    <!-- ==============FOOTER SECTION START HERE========== -->
+    <section class="md:mt-5 mt-3">
+      <div class="bg-black p-[3%]">
+        <div
+          class="flex justify-between items-center md:flex-row flex-col md:gap-0 gap-5"
+        >
+          <div class="">
+            <img src="../build/assets/imgs/footer-logo.png" alt="" />
+          </div>
+          <div class="flex gap-5">
+            <div>
+              <a href="">
+                <img src="../build/assets/imgs/utube.png" alt="" />
+              </a>
             </div>
-        </section>
-        <!-- hero section end -->
+            <div>
+              <a href="">
+                <img src="../build/assets/imgs/insta.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
 
-        <br />
-        <br />
-        <br />
-
-        <!-- video section start -->
-        <section class="text-center relative">
-            <div
-                class="min-h-screen w-full flex items-end justify-start text-left bg-cover bg-center relative"
-            >
-                <video
-                    autoplay
-                    muted
-                    loop
-                    class="object-cover w-full h-full absolute inset-0"
+        <hr class="w-[100%] text-text-color mt-10" />
+        <div
+          class="flex justify-between pt-5 md:flex-row flex-col md:gap-0 gap-5"
+        >
+          <div class="div">
+            <ul class="gap-9 flex">
+              <li>
+                <a
+                  href=""
+                  class="text-white capitalize nimbus font-normal md:text-lg text-[12px]"
+                  >About</a
                 >
-                    <source src="./assets/imgs/video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <div class="p-5 z-10 absolute bottom-0 left-0 right-0">
-                    <div class="flex text-white items-center">
-                        <p>Sep 2, 2022</p>
-                        <img
-                            src="./assets/imgs/circle.png"
-                            alt=""
-                            class="ml-5"
-                        />
-
-                        <p class="ml-2">Fashion</p>
-                    </div>
-                    <a
-                        href="#"
-                        class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
-                    >
-                        Making of Vogue arabia june 2023
-                        <span class="Ogg">saudi issue</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- video section end -->
-        <br />
-        <br />
-        <br />
-
-        <!-- Google Add Section -->
-        <section class="text-center">
-            <div
-                class="p-5 w-full flex items-end justify-start text-left bg-cover bg-center"
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white capitalize nimbus font-normal md:text-lg text-[12px]"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white capitalize nimbus font-normal md:text-lg text-[12px]"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-white capitalize nimbus font-normal md:text-lg text-[12px]"
+                  >Advertise</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <p
+              class="nimbus font-normal md:text-lg text-[12px] text-white md:flex-none flex justify-center"
             >
-                <img src="./assets/imgs/GOOGLEADD.png" alt="" />
-            </div>
-        </section>
-        <!-- Google Add section end -->
+              © 2021 Copyright AMDmode site
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==============FOOTER SECTION END HERE========== -->
 
-        <br />
-        <br />
-        <br />
 
-        <!-- blog1 Section -->
-        <section class="text-center">
-            <div
-                class="relative min-h-screen w-full flex items-end justify-start text-left bg-cover bg-no-repeat md:bg-center-none bg-center"
-                style="background-image: url(./assets/imgs/img2.png)"
-            >
-                <div class="p-5 z-10 justify-start">
-                    <div class="flex text-white items-center">
-                        <p>Sep 2, 2022</p>
-                        <img
-                            src="./assets/imgs/circle.png"
-                            alt=""
-                            class="ml-5"
-                        />
 
-                        <p class="ml-2">Fashion</p>
-                    </div>
-                    <a
-                        href="#"
-                        class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
-                    >
-                        DIOR DIOR
-                        <span class="Ogg">DIOR</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- blog1 section end -->
-        <br />
-        <br />
-        <br />
 
-        <!-- blog1 Section -->
-        <section class="text-center">
-            <div
-                class="relative min-h-screen w-full flex items-end justify-start text-left bg-cover bg-no-repeat md:bg-center-none bg-center"
-                style="background-image: url(./assets/imgs/img3.png)"
-            >
-                <div class="p-5 z-10 justify-start">
-                    <div class="flex text-white items-center">
-                        <p>Sep 2, 2022</p>
-                        <img
-                            src="./assets/imgs/circle.png"
-                            alt=""
-                            class="ml-5"
-                        />
 
-                        <p class="ml-2">Fashion</p>
-                    </div>
-                    <a
-                        href="#"
-                        class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
-                    >
-                        VALENTINO IN
-                        <span class="Ogg">MILANO</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- blog1 section end -->
-        <br />
-        <br />
-        <br />
 
-        <!-- Google Add Section -->
-        <section class="text-center">
-            <div
-                class="p-5 w-full flex items-end justify-start text-left bg-cover bg-center"
-            >
-                <img src="./assets/imgs/GOOGLEADD.png" alt="" />
-            </div>
-        </section>
-        <!-- Google Add section end -->
-        <br />
-        <br />
-    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1, // Default slides per view
+        spaceBetween: 10, // Adjust spacing as needed
+        loop: true,
+    
+        // Responsive breakpoints
+        breakpoints: {
+          320: {
+            slidesPerView: 1, // Show 1 slide on small devices
+          },
+          640: {
+            slidesPerView: 1, // Show 1 slide on small devices
+          },
+          768: {
+            slidesPerView: 2, // Show 2 slides on medium devices
+          },
+          1024: {
+            slidesPerView: 3, // Show 3 slides on large devices
+          },
+        },
+    
+        // Other Swiper configurations as needed
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
 </html>
