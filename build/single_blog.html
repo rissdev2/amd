@@ -10,6 +10,60 @@
     />
   </head>
   <body class="bg-white">
+
+
+    <!-- ======================NAVBAR START HERE=============== -->
+<div class="header bg-black text-center flex justify-center">
+  <div class="p-5">
+    <img src="./assets/imgs/Logo.png" alt="" class="h-[65px]">
+
+  </div>
+</div>
+ <!-- Navigation Bar -->
+ <nav class="bg-black text-white p-4">
+
+  <!-- Container for Centering -->
+  <div class="container mx-auto flex justify-between items-center">
+
+      <!-- Navigation Links -->
+      <div class="flex items-center">
+        <input type="text" placeholder="Search..." class="p-2 border border-gray-700 rounded-md focus:outline-none">
+        <button class="ml-2 focus:outline-none">
+          <img src="./assets/imgs/search_icon.png" alt="">
+        </button>
+    </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-xl focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+          </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="hidden md:flex space-x-4">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="./blog-page.html" class="hover:text-gray-300">About</a>
+          <a href="#" class="hover:text-gray-300">Services</a>
+          <a href="#" class="hover:text-gray-300">Contact</a>
+      </div>
+
+  </div> <!-- End Container -->
+
+</nav> <!-- End Navigation Bar -->
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
+  <a href="#" class="block py-2">Home</a>
+  <a href="./blog-page.html" class="block py-2">About</a>
+  <a href="#" class="block py-2">Services</a>
+  <a href="#" class="block py-2">Contact</a>
+</div>
+<!-- ======================NAVBAR END HERE=============== -->
     <!-- Header -->
 
     <!-- Google Add Section -->
