@@ -2,8 +2,6 @@
 module.exports = {
     content: ["./build/*.html"],
     theme: {
-      
-     
         extend: {
             backgroundImage: {
                 images: "url('./assets/images.png')",
@@ -13,17 +11,16 @@ module.exports = {
                 'bg-black':'#000',    
                 'text-white':'#fff',    
           },
-          screens: {
-            
+            screens: {
             'pc': '1920px',
-            // => @media (min-width: 1280px) { ... }
+          },
+          fontSize:{
+            'main': '78px',
           },
         },
     },
     plugins: [],
 };
-
-
 
 
   

@@ -4,22 +4,50 @@
 
 @font-face {
     font-family: nimbus;
-    src: url(../build/assets/fonts/NimbusSanL-Bold.ttf);
+    src: url(../fonts/NimbusSanL-Bold.ttf);
   }
   .nimbus{
     font-family: nimbus;
   }
   @font-face {
+    font-family: nimbus_regular;
+    src: url(../fonts/nimbus-sans/NimbusSanL-Regu.ttf);
+  }
+  .nimbus_regular{
+    font-family: nimbus_regular;
+  }
+
+  @font-face {
     font-family: Ogg;
-    src: url(../build/assets/fonts/ogg-font-family-1708668328-0/Ogg-ThinItalic-BF646c18fc568b1.ttf);
+    src: url(../fonts/ogg-font-family-1708668328-0/Ogg-ThinItalic-BF646c18fc568b1.ttf);
   }
   .Ogg{
     font-family: Ogg;
   }
+  @font-face {
+    font-family: Ogg-regular;
+    src: url(../build/assets/fonts/Ogg-BoldItalic-BF646c18fc5163c.ttf);
+  }
+  .Ogg-regular{
+    font-family: Ogg-regular;
+  }
 
-  /* @media screen and (min-width: 320px) {
-    .header {
-      background-position:center !important;
-    }
-  } */
+
+  .mySwiper .swiper-pagination-bullet, .mySwiper3 .swiper-pagination-bullet{
+    background: #ffffffc9;
+  }
+  .mySwiper .swiper-pagination-bullet-active, .mySwiper3 .swiper-pagination-bullet{
+    background: #fff;
+  }
+  .mySwiper .swiper-pagination-bullet, .mySwiper3 .swiper-pagination-bullet .black{
+    background: black;
+  }
+  .mySwiper .swiper-pagination-bullet-active, .mySwiper3 .swiper-pagination-bullet .black{
+    background:black;
+  }
+
+
+ 
+  
+
   

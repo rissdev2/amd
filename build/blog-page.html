@@ -10,92 +10,94 @@
     />
     </head>
     <body>
- <!-- ======================NAVBAR START HERE=============== -->
- <div class="md:flex hidden flex-col">
-  <div class=" bg-black text-center flex justify-center">
-    <div class="p-5 flex justify-center">
-      <a href="./index.html" class="flex justify-center"><img src="./assets/imgs/Logo.png" alt="" class="lg:w-full w-2/4" /></a>
+  <!-- ======================NAVBAR START HERE=============== -->
+  <div class="md:flex hidden flex-col">
+    <div class=" bg-black text-center flex justify-center">
+      <div class="p-5 flex justify-center">
+        <a href="./index.html" class="flex justify-center"><img src="./assets/imgs/Logo.png" alt="" class="lg:w-full w-2/4" /></a>
+      </div>
+    </div>
+    <div class="flex justify-between bg-black items-center py-7">
+      <div class="basis-1/5"></div>
+      <div class="basis-3/5">
+        <ul class="flex text-white justify-between gap-9">
+          <li><a href="./index.html" class="uppercase  pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 nimbus">Fashion</a></li>
+          <li><a href="./blog-page.html" class="uppercase  text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 nimbus_regular">Grooming</a></li>
+          <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Lifestyle</a></li>
+          <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Culture</a></li>
+          <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Trends</a></li>
+        </ul>
+      </div>
+      <div class="basis-1/5">
+        <div id="searchContainer" class="flex justify-end mr-16">
+          <button id="searchButton" class="focus:outline-none">
+            <img src="./assets/imgs/search_icon.png" alt="" />
+          </button>
+          <input type="text" id="searchInput" class="hidden  bg-white border border-gray-300 px-3 py-1 rounded-md md:w-full w-32 ml-5" placeholder="Search..." />
+        </div>
+      </div>
     </div>
   </div>
-  <div class="flex justify-between bg-black items-center py-7">
-    <div class="basis-1/5"></div>
-    <div class="basis-3/5">
-      <ul class="flex text-white justify-between gap-9">
-        <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7">Fashion</a></li>
-        <li><a href="./blog-page.html" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
-        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
-        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
-        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+    <!-- Navigation Bar -->
+    <nav class="bg-black text-white p-4 md:hidden flex">
+        <!-- Mobile Menu Button -->
+        <div class="flex justify-between items-center">
+          <div class="">
+            <a href="./index.html"><img src="./assets/imgs/Logo.png" alt="" class="w-2/5" /></a>
+          </div>
+          <div class="">
+            <button id="mobile-menu-btn" class="text-xl focus:outline-none">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
+      <ul class="flex text-white justify-between flex-col text-center items-center">
+        <li><a href="./index.html" class="uppercase  pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 block py-2 nimbus">Fashion</a></li>
+        <li><a href="./blog-page.html" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 nimbus">Grooming</a></li>
+        <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
+        <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
+        <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+          <input type="text" id="searchInput" class="  bg-white border border-gray-300 px-3 py-2 rounded-md w-full" placeholder="Search..." />
       </ul>
     </div>
-    <div class="basis-1/5">
-      <div id="searchContainer" class="flex justify-end mr-16">
-        <button id="searchButton" class="focus:outline-none">
-          <img src="./assets/imgs/search_icon.png" alt="" />
-        </button>
-        <input type="text" id="searchInput" class="hidden  bg-white border border-gray-300 px-3 py-1 rounded-md md:w-full w-32 ml-5" placeholder="Search..." />
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- Navigation Bar -->
-  <nav class="bg-black text-white p-4 md:hidden flex">
-      <!-- Mobile Menu Button -->
-      <div class="flex justify-between items-center">
-        <div class="">
-          <a href="./index.html"><img src="./assets/imgs/Logo.png" alt="" class="w-2/5" /></a>
-        </div>
-        <div class="">
-          <button id="mobile-menu-btn" class="text-xl focus:outline-none">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-  </nav>
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
-    <ul class="flex text-white justify-between flex-col text-center items-center">
-      <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 block py-2">Fashion</a></li>
-      <li><a href="./blog-page.html" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
-      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
-      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
-      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
-        <input type="text" id="searchInput" class="  bg-white border border-gray-300 px-3 py-2 rounded-md w-full" placeholder="Search..." />
-    </ul>
-  </div>
-  <!-- ======================NAVBAR END HERE=============== -->
+    <!-- ======================NAVBAR END HERE=============== -->
 
 <!-- ==============GOOGLE HEADER SECTION START HERE========== -->
-<section class="text-center">
-    <div class="md:p-10 p-3 w-full bg-cover bg-center">
-      <img src="./assets/imgs/GOOGLEADD.png" alt="" class="w-full" />
-    </div>
-  </section>
+<section class="text-center pc:m-[100px] md:m-[5%] m-[3%]">
+  <div
+    class=" w-full flex bg-cover bg-center"
+  >
+    <img src="./assets/imgs/GOOGLEADD.png" alt="" class="w-full" />
+  </div>
+</section>
   <!-- ==============GOOGLE HEADER SECTION END HERE========== -->
 
   <!-- ======================SLIDER START HERE=============== -->
   <section>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+    <div class="swiper mySwiper black">
+        <div class="swiper-wrapper md:pb-16  pb-5">
             <div class="swiper-slide">
                 <div class="text-center">
                     <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
                         style="background-image: url(./assets/imgs/img.png)">
                         <div class="p-5 z-10 justify-center">
-                            <a href="#" class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white">
+                            <a href="#" class="md:text-[24px] text-base nimbus_regular  tracking-tight leading-10 text-white">
                                 Source : Fashion Collection
                             </a>
                         </div>
@@ -107,9 +109,9 @@
                 <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
                     style="background-image: url(./assets/imgs/img.png)">
                     <div class="p-5 z-10 justify-center">
-                        <a href="#" class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white">
-                            Source : Fashion Collection
-                        </a>
+                      <a href="#" class="md:text-[24px] text-base nimbus_regular  tracking-tight leading-10 text-white">
+                        Source : Fashion Collection
+                    </a>
                     </div>
                 </div>
             </div>
@@ -119,9 +121,9 @@
                 <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
                     style="background-image: url(./assets/imgs/img.png)">
                     <div class="p-5 z-10 justify-center">
-                        <a href="#" class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white">
-                            Source : Fashion Collection
-                        </a>
+                      <a href="#" class="md:text-[24px] text-base nimbus_regular  tracking-tight leading-10 text-white">
+                        Source : Fashion Collection
+                    </a>
                     </div>
                 </div>
             </div>
@@ -135,7 +137,7 @@
             <div class="basis-full">
               <div class=" flex gap-5">
                 <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                  class="nimbus md:text-xl text-[12px] text-text-color leading-5"
                 >
                   Sep 2 , 2022
                 </p>
@@ -148,7 +150,7 @@
                     />
                   </div>
                   <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                    class="nimbus  md:text-xl text-[12px] text-text-color leading-5"
                   >
                     Fashion
                   </p>
@@ -158,17 +160,17 @@
 
 
               <div class="pt-5">
-                <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
+                <h1 class="nimbus pc:text-[58px] md:text-5xl text-xl font-bold leading-10 text-black">
                   FENDI <span class="font-normal">X</span>
-                  <span class="nimbus font-normal italic"> BENZEMA</span>
+                  <span class="Ogg-regular italic"> BENZEMA</span>
                 </h1>
                 <p
-                  class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
+                  class="pt-2 nimbus_regular capitalize md:text-lg text-[12px] text-text-color md:pt-3 leading-9"
                 >
                 The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
                 </p>
-                <div class="relative inline-block text-left">
-                  <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
+                <div class="relative inline-block text-left md:mt-7 mt-5">
+                  <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
                     Read Now
                     <!-- Dropdown arrow -->
                     <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -186,126 +188,121 @@
               </div>
             </div>
           </div>
-
       </div>
       <div class="md:p-[5%] p-[3%]  text hidden " id="text2">
         <div class="flex">
-            <div class="basis-full">
-              <div class=" flex gap-5">
-                <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                >
-                  Sep 2 , 2022
-                </p>
-                <div class="flex items-center gap-3">
-                  <div>
-                    <img
-                      src="../build/assets/imgs/circle.png"
-                      alt=""
-                      class="w-full"
-                    />
-                  </div>
-                  <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                  >
-                    Fashion
-                  </p>
+          <div class="basis-full">
+            <div class=" flex gap-5">
+              <p
+                class="nimbus md:text-xl text-[12px] text-text-color leading-5"
+              >
+                Sep 2 , 2022
+              </p>
+              <div class="flex items-center gap-3">
+                <div>
+                  <img
+                    src="../build/assets/imgs/circle.png"
+                    alt=""
+                    class="w-full"
+                  />
                 </div>
-              </div>
-              <hr class="w-[100%] text-text-color mt-2" />
-
-
-              <div class="pt-5">
-                <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
-                    DIOR DIOR  <span class="font-normal">DIOR</span>
-                </h1>
                 <p
-                  class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
+                  class="nimbus  md:text-xl text-[12px] text-text-color leading-5"
                 >
-                The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+                  Fashion
                 </p>
-                <!-- <a href="" class="mt-5 md:w-[30%] w-full bg-bg-black flex py-3 text-text-white px-10 nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
-                    Read More
-                  </a> -->
-                  <div class="relative inline-block text-left">
-                    <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
-                      Read Now
-                      <!-- Dropdown arrow -->
-                      <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                      </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
-                      <!-- Dropdown items -->
-                      <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
-                      <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
-                      <!-- Add more dropdown items as needed -->
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <hr class="w-[100%] text-text-color mt-2" />
+
+
+            <div class="pt-5">
+              <h1 class="nimbus pc:text-[58px] md:text-5xl text-xl font-bold leading-10 text-black">
+                MELO <span class="font-normal">X</span>
+                <span class="Ogg-regular italic"> BENZEMA</span>
+              </h1>
+              <p
+                class="pt-2 nimbus_regular capitalize md:text-lg text-[12px] text-text-color md:pt-3 leading-9"
+              >
+              The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+              </p>
+              <div class="relative inline-block text-left md:mt-7 mt-5">
+                <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
+                  Read Now
+                  <!-- Dropdown arrow -->
+                  <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
+                  <!-- Dropdown items -->
+                  <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
+                  <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
+                  <!-- Add more dropdown items as needed -->
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
       </div>
       <div class="md:p-[5%] p-[3%]  text hidden " id="text3">
         <div class="flex">
-            <div class="basis-full">
-              <div class=" flex gap-5">
-                <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                >
-                  Sep 2 , 2022
-                </p>
-                <div class="flex items-center gap-3">
-                  <div>
-                    <img
-                      src="../build/assets/imgs/circle.png"
-                      alt=""
-                      class="w-full"
-                    />
-                  </div>
-                  <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                  >
-                    Fashion
-                  </p>
+          <div class="basis-full">
+            <div class=" flex gap-5">
+              <p
+                class="nimbus md:text-xl text-[12px] text-text-color leading-5"
+              >
+                Sep 2 , 2022
+              </p>
+              <div class="flex items-center gap-3">
+                <div>
+                  <img
+                    src="../build/assets/imgs/circle.png"
+                    alt=""
+                    class="w-full"
+                  />
                 </div>
-              </div>
-              <hr class="w-[100%] text-text-color mt-2" />
-
-
-              <div class="pt-5">
-                <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
-                    Valentino in  <span class="font-normal">Milano</span>
-                </h1>
                 <p
-                  class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
+                  class="nimbus  md:text-xl text-[12px] text-text-color leading-5"
                 >
-                The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+                  Fashion
                 </p>
-                <!-- <a href="" class="mt-5 md:w-[30%] w-full bg-bg-black flex py-3 text-text-white px-10 nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
-                    Read More
-                  </a> -->
-                  <div class="relative inline-block text-left">
-                    <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
-                      Read Now
-                      <!-- Dropdown arrow -->
-                      <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                      </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
-                      <!-- Dropdown items -->
-                      <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
-                      <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
-                      <!-- Add more dropdown items as needed -->
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <hr class="w-[100%] text-text-color mt-2" />
+
+
+            <div class="pt-5">
+              <h1 class="nimbus pc:text-[58px] md:text-5xl text-xl font-bold leading-10 text-black">
+                FENDI <span class="font-normal">X</span>
+                <span class="Ogg-regular italic"> BENZEMA</span>
+              </h1>
+              <p
+                class="pt-2 nimbus_regular capitalize md:text-lg text-[12px] text-text-color md:pt-3 leading-9"
+              >
+              The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+              </p>
+              <div class="relative inline-block text-left md:mt-7 mt-5">
+                <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
+                  Read Now
+                  <!-- Dropdown arrow -->
+                  <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
+                  <!-- Dropdown items -->
+                  <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
+                  <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
+                  <!-- Add more dropdown items as needed -->
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
       </div>
     </div>
@@ -314,14 +311,14 @@
 
   <!-- ======================SLIDER DIOR START HERE=============== -->
   <section>
-    <div class="swiper mySwiper2">
-        <div class="swiper-wrapper">
+    <div class="swiper mySwiper2 black">
+        <div class="swiper-wrapper md:pb-16  pb-5">
             <div class="swiper-slide">
                 <div class="text-center">
                     <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
                         style="background-image: url(./assets/imgs/dior.png)">
                         <div class="p-5 z-10 justify-center">
-                            <a href="#" class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white">
+                            <a href="#" class="md:text-[24px] text-base nimbus_regular  tracking-tight leading-10 text-white">
                                 Source : Fashion Collection
                             </a>
                         </div>
@@ -333,9 +330,9 @@
                 <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
                     style="background-image: url(./assets/imgs/dior.png)">
                     <div class="p-5 z-10 justify-center">
-                        <a href="#" class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white">
-                            Source : Fashion Collection
-                        </a>
+                      <a href="#" class="md:text-[24px] text-base nimbus_regular  tracking-tight leading-10 text-white">
+                        Source : Fashion Collection
+                    </a>
                     </div>
                 </div>
             </div>
@@ -345,9 +342,9 @@
                 <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
                     style="background-image: url(./assets/imgs/dior.png)">
                     <div class="p-5 z-10 justify-center">
-                        <a href="#" class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white">
-                            Source : Fashion Collection
-                        </a>
+                      <a href="#" class="md:text-[24px] text-base nimbus_regular  tracking-tight leading-10 text-white">
+                        Source : Fashion Collection
+                    </a>
                     </div>
                 </div>
             </div>
@@ -361,7 +358,7 @@
             <div class="basis-full">
               <div class=" flex gap-5">
                 <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                  class="nimbus md:text-xl text-[12px] text-text-color leading-5"
                 >
                   Sep 2 , 2022
                 </p>
@@ -374,7 +371,7 @@
                     />
                   </div>
                   <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                    class="nimbus  md:text-xl text-[12px] text-text-color leading-5"
                   >
                     Fashion
                   </p>
@@ -384,16 +381,17 @@
 
 
               <div class="pt-5">
-                <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
-                    DIOR DIOR  <span class="font-normal">DIOR</span>
+                <h1 class="nimbus pc:text-[58px] md:text-5xl text-xl font-bold leading-10 text-black">
+                  DIOR DIOR  
+                  <span class="Ogg-regular italic"> DIOR</span>
                 </h1>
                 <p
-                  class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
+                  class="pt-2 nimbus_regular capitalize md:text-lg text-[12px] text-text-color md:pt-3 leading-9"
                 >
                 The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
                 </p>
-                <div class="relative inline-block text-left">
-                  <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
+                <div class="relative inline-block text-left md:mt-7 mt-5">
+                  <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
                     Read Now
                     <!-- Dropdown arrow -->
                     <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -411,121 +409,121 @@
               </div>
             </div>
           </div>
-
       </div>
       <div class="md:p-[5%] p-[3%]  dior hidden " id="dior2">
         <div class="flex">
-            <div class="basis-full">
-              <div class=" flex gap-5">
-                <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                >
-                  Sep 2 , 2022
-                </p>
-                <div class="flex items-center gap-3">
-                  <div>
-                    <img
-                      src="../build/assets/imgs/circle.png"
-                      alt=""
-                      class="w-full"
-                    />
-                  </div>
-                  <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                  >
-                    Fashion
-                  </p>
+          <div class="basis-full">
+            <div class=" flex gap-5">
+              <p
+                class="nimbus md:text-xl text-[12px] text-text-color leading-5"
+              >
+                Sep 2 , 2022
+              </p>
+              <div class="flex items-center gap-3">
+                <div>
+                  <img
+                    src="../build/assets/imgs/circle.png"
+                    alt=""
+                    class="w-full"
+                  />
                 </div>
-              </div>
-              <hr class="w-[100%] text-text-color mt-2" />
-
-
-              <div class="pt-5">
-                <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
-                    FENDI <span class="font-normal">X</span>
-                    <span class="nimbus font-normal italic"> BENZEMA</span>
-                  </h1>
                 <p
-                  class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
+                  class="nimbus  md:text-xl text-[12px] text-text-color leading-5"
                 >
-                The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+                  Fashion
                 </p>
-                <div class="relative inline-block text-left">
-                  <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
-                    Read Now
-                    <!-- Dropdown arrow -->
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
-                    <!-- Dropdown items -->
-                    <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
-                    <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
-                    <!-- Add more dropdown items as needed -->
-                  </div>
+              </div>
+            </div>
+            <hr class="w-[100%] text-text-color mt-2" />
+
+
+            <div class="pt-5">
+              <h1 class="nimbus pc:text-[58px] md:text-5xl text-xl font-bold leading-10 text-black">
+                MELO <span class="font-normal">X</span>
+                <span class="Ogg-regular italic"> BENZEMA</span>
+              </h1>
+              <p
+                class="pt-2 nimbus_regular capitalize md:text-lg text-[12px] text-text-color md:pt-3 leading-9"
+              >
+              The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+              </p>
+              <div class="relative inline-block text-left md:mt-7 mt-5">
+                <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
+                  Read Now
+                  <!-- Dropdown arrow -->
+                  <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
+                  <!-- Dropdown items -->
+                  <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
+                  <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
+                  <!-- Add more dropdown items as needed -->
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
       </div>
       <div class="md:p-[5%] p-[3%]  dior hidden " id="dior3">
         <div class="flex">
-            <div class="basis-full">
-              <div class=" flex gap-5">
-                <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                >
-                  Sep 2 , 2022
-                </p>
-                <div class="flex items-center gap-3">
-                  <div>
-                    <img
-                      src="../build/assets/imgs/circle.png"
-                      alt=""
-                      class="w-full"
-                    />
-                  </div>
-                  <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                  >
-                    Fashion
-                  </p>
+          <div class="basis-full">
+            <div class=" flex gap-5">
+              <p
+                class="nimbus md:text-xl text-[12px] text-text-color leading-5"
+              >
+                Sep 2 , 2022
+              </p>
+              <div class="flex items-center gap-3">
+                <div>
+                  <img
+                    src="../build/assets/imgs/circle.png"
+                    alt=""
+                    class="w-full"
+                  />
                 </div>
-              </div>
-              <hr class="w-[100%] text-text-color mt-2" />
-
-
-              <div class="pt-5">
-                <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
-                    Valentino in  <span class="font-normal">Milano</span>
-                </h1>
                 <p
-                  class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
+                  class="nimbus  md:text-xl text-[12px] text-text-color leading-5"
                 >
-                The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+                  Fashion
                 </p>
-                <div class="relative inline-block text-left">
-                  <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
-                    Read Now
-                    <!-- Dropdown arrow -->
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
-                    <!-- Dropdown items -->
-                    <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
-                    <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
-                    <!-- Add more dropdown items as needed -->
-                  </div>
+              </div>
+            </div>
+            <hr class="w-[100%] text-text-color mt-2" />
+
+
+            <div class="pt-5">
+              <h1 class="nimbus pc:text-[58px] md:text-5xl text-xl font-bold leading-10 text-black">
+                FENDI <span class="font-normal">X</span>
+                <span class="Ogg-regular italic"> BENZEMA</span>
+              </h1>
+              <p
+                class="pt-2 nimbus_regular capitalize md:text-lg text-[12px] text-text-color md:pt-3 leading-9"
+              >
+              The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+              </p>
+              <div class="relative inline-block text-left md:mt-7 mt-5">
+                <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
+                  Read Now
+                  <!-- Dropdown arrow -->
+                  <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
+                  <!-- Dropdown items -->
+                  <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
+                  <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
+                  <!-- Add more dropdown items as needed -->
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
       </div>
     </div>
@@ -584,222 +582,223 @@
 
 <!-- ======================SLIDER VALENTINO START HERE=============== -->
 <section>
-    <div class="swiper mySwiper3">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="text-center">
-                    <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
-                        style="background-image: url(./assets/imgs/img3.png)">
-                        <div class="p-5 z-10 justify-center">
-                            <a href="#" class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white">
-                                Source : Fashion Collection
-                            </a>
-                        </div>
-                    </div>
+  <div class="swiper mySwiper3 black">
+      <div class="swiper-wrapper md:pb-16  pb-5">
+          <div class="swiper-slide">
+              <div class="text-center">
+                  <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
+                      style="background-image: url(./assets/imgs/img3.png)">
+                      <div class="p-5 z-10 justify-center">
+                          <a href="#" class="md:text-[24px] text-base nimbus_regular  tracking-tight leading-10 text-white">
+                              Source : Fashion Collection
+                          </a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        <div class="swiper-slide">
+          <div class="text-center">
+              <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
+                  style="background-image: url(./assets/imgs/img3.png)">
+                  <div class="p-5 z-10 justify-center">
+                    <a href="#" class="md:text-[24px] text-base nimbus_regular  tracking-tight leading-10 text-white">
+                      Source : Fashion Collection
+                  </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text-center">
+              <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
+                  style="background-image: url(./assets/imgs/img3.png)">
+                  <div class="p-5 z-10 justify-center">
+                    <a href="#" class="md:text-[24px] text-base nimbus_regular  tracking-tight leading-10 text-white">
+                      Source : Fashion Collection
+                  </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="text-container">
+    <div class="md:p-[5%] p-[3%] valentino " id="valentino1">
+      <div class="flex">
+          <div class="basis-full">
+            <div class=" flex gap-5">
+              <p
+                class="nimbus md:text-xl text-[12px] text-text-color leading-5"
+              >
+                Sep 2 , 2022
+              </p>
+              <div class="flex items-center gap-3">
+                <div>
+                  <img
+                    src="../build/assets/imgs/circle.png"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                <p
+                  class="nimbus  md:text-xl text-[12px] text-text-color leading-5"
+                >
+                  Fashion
+                </p>
+              </div>
+            </div>
+            <hr class="w-[100%] text-text-color mt-2" />
+
+
+            <div class="pt-5">
+              <h1 class="nimbus pc:text-[58px] md:text-5xl text-xl font-bold leading-10 text-black capitalize">
+                Valentino in 
+                <span class="Ogg-regular italic uppercase"> Milano</span>
+              </h1>
+              <p
+                class="pt-2 nimbus_regular capitalize md:text-lg text-[12px] text-text-color md:pt-3 leading-9"
+              >
+              The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+              </p>
+              <div class="relative inline-block text-left md:mt-7 mt-5">
+                <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
+                  Read Now
+                  <!-- Dropdown arrow -->
+                  <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
+                  <!-- Dropdown items -->
+                  <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
+                  <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
+                  <!-- Add more dropdown items as needed -->
                 </div>
               </div>
-          <div class="swiper-slide">
-            <div class="text-center">
-                <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
-                    style="background-image: url(./assets/imgs/img3.png)">
-                    <div class="p-5 z-10 justify-center">
-                        <a href="#" class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white">
-                            Source : Fashion Collection
-                        </a>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="text-center">
-                <div class="relative min-h-screen w-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
-                    style="background-image: url(./assets/imgs/img3.png)">
-                    <div class="p-5 z-10 justify-center">
-                        <a href="#" class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white">
-                            Source : Fashion Collection
-                        </a>
-                    </div>
-                </div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="text-container">
-      <div class="md:p-[5%] p-[3%] valentino " id="valention1">
-        <div class="flex">
-            <div class="basis-full">
-              <div class=" flex gap-5">
-                <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                >
-                  Sep 2 , 2022
-                </p>
-                <div class="flex items-center gap-3">
-                  <div>
-                    <img
-                      src="../build/assets/imgs/circle.png"
-                      alt=""
-                      class="w-full"
-                    />
-                  </div>
-                  <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                  >
-                    Fashion
-                  </p>
-                </div>
-              </div>
-              <hr class="w-[100%] text-text-color mt-2" />
-
-
-              <div class="pt-5">
-                <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
-                    Valentino in  <span class="font-normal">Milano</span>
-                </h1>
-                <p
-                  class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
-                >
-                The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
-                </p>
-                <div class="relative inline-block text-left">
-                  <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
-                    Read Now
-                    <!-- Dropdown arrow -->
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
-                    <!-- Dropdown items -->
-                    <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
-                    <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
-                    <!-- Add more dropdown items as needed -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </div>
-      <div class="md:p-[5%] p-[3%]  valentino hidden " id="valention2">
-        <div class="flex">
-            <div class="basis-full">
-              <div class=" flex gap-5">
-                <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                >
-                  Sep 2 , 2022
-                </p>
-                <div class="flex items-center gap-3">
-                  <div>
-                    <img
-                      src="../build/assets/imgs/circle.png"
-                      alt=""
-                      class="w-full"
-                    />
-                  </div>
-                  <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                  >
-                    Fashion
-                  </p>
-                </div>
-              </div>
-              <hr class="w-[100%] text-text-color mt-2" />
-
-
-              <div class="pt-5">
-                <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
-                    FENDI <span class="font-normal">X</span>
-                    <span class="nimbus font-normal italic"> BENZEMA</span>
-                  </h1>
-                <p
-                  class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
-                >
-                The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
-                </p>
-                <div class="relative inline-block text-left">
-                  <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
-                    Read Now
-                    <!-- Dropdown arrow -->
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
-                    <!-- Dropdown items -->
-                    <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
-                    <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
-                    <!-- Add more dropdown items as needed -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </div>
-      <div class="md:p-[5%] p-[3%]  valentino hidden " id="valention3">
-        <div class="flex">
-            <div class="basis-full">
-              <div class=" flex gap-5">
-                <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                >
-                  Sep 2 , 2022
-                </p>
-                <div class="flex items-center gap-3">
-                  <div>
-                    <img
-                      src="../build/assets/imgs/circle.png"
-                      alt=""
-                      class="w-full"
-                    />
-                  </div>
-                  <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-                  >
-                    Fashion
-                  </p>
-                </div>
-              </div>
-              <hr class="w-[100%] text-text-color mt-2" />
-
-
-              <div class="pt-5">
-                <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
-                    DIOR DIOR  <span class="font-normal">DIOR</span>
-                </h1>
-                <p
-                  class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
-                >
-                The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
-                </p>
-                <div class="relative inline-block text-left">
-                  <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
-                    Read Now
-                    <!-- Dropdown arrow -->
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
-                    <!-- Dropdown items -->
-                    <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
-                    <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
-                    <!-- Add more dropdown items as needed -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </div>
     </div>
-  </section>
+    <div class="md:p-[5%] p-[3%]  valentino hidden " id="valentino2">
+      <div class="flex">
+        <div class="basis-full">
+          <div class=" flex gap-5">
+            <p
+              class="nimbus md:text-xl text-[12px] text-text-color leading-5"
+            >
+              Sep 2 , 2022
+            </p>
+            <div class="flex items-center gap-3">
+              <div>
+                <img
+                  src="../build/assets/imgs/circle.png"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <p
+                class="nimbus  md:text-xl text-[12px] text-text-color leading-5"
+              >
+                Fashion
+              </p>
+            </div>
+          </div>
+          <hr class="w-[100%] text-text-color mt-2" />
+
+
+          <div class="pt-5">
+            <h1 class="nimbus pc:text-[58px] md:text-5xl text-xl font-bold leading-10 text-black">
+              MELO <span class="font-normal">X</span>
+              <span class="Ogg-regular italic"> BENZEMA</span>
+            </h1>
+            <p
+              class="pt-2 nimbus_regular capitalize md:text-lg text-[12px] text-text-color md:pt-3 leading-9"
+            >
+            The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+            </p>
+            <div class="relative inline-block text-left md:mt-7 mt-5">
+              <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
+                Read Now
+                <!-- Dropdown arrow -->
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
+                <!-- Dropdown items -->
+                <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
+                <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
+                <!-- Add more dropdown items as needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="md:p-[5%] p-[3%]  valentino hidden " id="valentino3">
+      <div class="flex">
+        <div class="basis-full">
+          <div class=" flex gap-5">
+            <p
+              class="nimbus md:text-xl text-[12px] text-text-color leading-5"
+            >
+              Sep 2 , 2022
+            </p>
+            <div class="flex items-center gap-3">
+              <div>
+                <img
+                  src="../build/assets/imgs/circle.png"
+                  alt=""
+                  class="w-full"
+                />
+              </div>
+              <p
+                class="nimbus  md:text-xl text-[12px] text-text-color leading-5"
+              >
+                Fashion
+              </p>
+            </div>
+          </div>
+          <hr class="w-[100%] text-text-color mt-2" />
+
+
+          <div class="pt-5">
+            <h1 class="nimbus pc:text-[58px] md:text-5xl text-xl font-bold leading-10 text-black">
+              FENDI <span class="font-normal">X</span>
+              <span class="Ogg-regular italic"> BENZEMA</span>
+            </h1>
+            <p
+              class="pt-2 nimbus_regular capitalize md:text-lg text-[12px] text-text-color md:pt-3 leading-9"
+            >
+            The new Official FENDI Faster Ambassador, Benzema embodies the progressive spirit of the Maison's latest sneaker design – as a world-beating athlete with Real Madrid and recently UEFA Men’s Player of the Year, Karim is known as an exemplary player and a true professional, making the decorated striker an ideal ambassador for the FENDI Faster.
+            </p>
+            <div class="relative inline-block text-left md:mt-7 mt-5">
+              <button type="button" id="dropdownButton" class="bg-bg-black flex py-3 px-7 text-text-white nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase">
+                Read Now
+                <!-- Dropdown arrow -->
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownMenu" class="absolute hidden bg-white border border-gray-200 py-1 mt-1 w-40 z-10">
+                <!-- Dropdown items -->
+                <a href="./single-blog-page-1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 1</a>
+                <a href="./single_blog.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View 2</a>
+                <!-- Add more dropdown items as needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   <!-- ======================SLIDER VALENTINO END HERE=============== -->
         
 <!-- ==============GOOGLE HEADER SECTION START HERE========== -->

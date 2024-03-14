@@ -7,7 +7,7 @@
     <link
       rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
-  <body class="">
+  <body class="bg-white">
     <!-- ======================NAVBAR START HERE=============== -->
     <div class="md:flex hidden flex-col">
     <div class=" bg-black text-center flex justify-center">
@@ -19,11 +19,11 @@
       <div class="basis-1/5"></div>
       <div class="basis-3/5">
         <ul class="flex text-white justify-between gap-9">
-          <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7">Fashion</a></li>
-          <li><a href="./blog-page.html" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
-          <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
-          <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
-          <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+          <li><a href="./index.html" class="uppercase  pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 nimbus">Fashion</a></li>
+          <li><a href="./blog-page.html" class="uppercase  text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 nimbus_regular">Grooming</a></li>
+          <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Lifestyle</a></li>
+          <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Culture</a></li>
+          <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Trends</a></li>
         </ul>
       </div>
       <div class="basis-1/5">
@@ -66,83 +66,63 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
       <ul class="flex text-white justify-between flex-col text-center items-center">
-        <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 block py-2">Fashion</a></li>
-        <li><a href="./blog-page.html" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
-        <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
-        <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
-        <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+        <li><a href="./index.html" class="uppercase  pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 block py-2 nimbus">Fashion</a></li>
+        <li><a href="./blog-page.html" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 nimbus">Grooming</a></li>
+        <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
+        <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
+        <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
           <input type="text" id="searchInput" class="  bg-white border border-gray-300 px-3 py-2 rounded-md w-full" placeholder="Search..." />
       </ul>
     </div>
     <!-- ======================NAVBAR END HERE=============== -->
 
     <!-- hero section end -->
-    <section class="text-center">
-      <div
-        class="relative header min-h-screen w-full flex items-end justify-start text-left bg-no-repeat bg-cover object-cover"
-        style="background-image: url(./assets/imgs/img.png)"
-      >
-        <div class="p-5 z-10 justify-start">
-          <div class="flex text-white items-center">
-            <p>Sep 2, 2022</p>
-            <img src="./assets/imgs/circle.png" alt="" class="ml-5" />
 
-            <p class="ml-2">Fashion</p>
-          </div>
-          <a
-            href="#"
-            class="md:text-4xl text-xl tracking-tight leading-10 font-bold text-white"
-          >
-            FENDI
-            <span class="font-normal">X</span>
-            <span class="nimbus font-normal italic"> BENZEMA</span>
-          </a>
+    <section class=" h-screen bg-cover bg-no-repeat flex items-end" style="background-image: url(./assets/imgs/img.png)">
+     
+      <div class="pl-[5%] pb-8">
+        <div class="text-xl nimbus_regular text-text-color flex items-center gap-10">
+          <p>Sep 2 , 2022</p>
+          <ul class="list-disc">
+            <li>Fashion</li>
+          </ul>
         </div>
+        <h1 class="text-white pc:text-[78px] md:text-[56px] text-2xl nimbus pt-5">FENDI <span class="Ogg-regular">X <i>BENZEMA</i> </span>
+        </h1>
       </div>
     </section>
     <!-- hero section end -->
 
     <!-- video section start -->
-    <section class="text-center relative md:mt-14 mt-3">
-      <div
-        class="min-h-screen w-full flex items-end justify-start text-left bg-cover bg-center relative"
-      >
-        <video
-          autoplay
-          muted
-          loop
-          class="object-cover w-full h-full absolute inset-0"
-        >
-          <source src="./assets/imgs/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="p-5 z-10 absolute bottom-0 left-0 right-0">
-          <div class="flex text-white items-center">
-            <p>Sep 2, 2022</p>
-            <img src="./assets/imgs/circle.png" alt="" class="ml-5" />
-
-            <p class="ml-2">Fashion</p>
-          </div>
-          <a
-            href="#"
-            class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
-          >
-            Making of Vogue arabia june 2023
-            <span class="Ogg">saudi issue</span>
-          </a>
+    <section class="relative h-screen overflow-hidden pc:mt-[200px] mt-[5%]">
+      <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
+        <source src="./assets/imgs/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    
+      <!-- Text Overlay -->
+      <div class="pl-[5%] pb-8 absolute bottom-5 left-0 right-0 bg-black bg-opacity-50 text-white">
+        <div class="text-xl nimbusl_regular text-text-color flex items-center gap-10">
+          <p>Sep 2 , 2022</p>
+          <ul class="list-disc">
+            <li>Fashion</li>
+          </ul>
         </div>
+        <h1 class="text-white pc:text-[68px] md:text-[56px] text-2xl nimbus_regular pt-5">Making of Vogue arabia june 2023 <i class="Ogg-regular capitalize">saudi issue</i>
+        </h1>
       </div>
     </section>
     <!-- video section end -->
+    
 
     <!-- Google Add Section -->
-    <section class="text-center md:mt-9 mt-3">
+    <section class="text-center pc:m-[100px] md:m-[5%] m-[3%]">
       <div
-        class="p-5 w-full flex items-end justify-start text-left bg-cover bg-center"
+        class=" w-full flex bg-cover bg-center"
       >
         <img src="./assets/imgs/GOOGLEADD.png" alt="" class="w-full" />
       </div>
-    </section><br><br>
+    </section>
     <!-- Google Add section end -->
 
 
@@ -151,125 +131,136 @@
  <!-- ============== RELETED BLOG DETAIL SECTION  START HERE========== -->
  <section>
   <div class="bg-bg-black">
-    <div class="md:p-10 p-5">
+    <div class="md:p-[5%] p-5 ">
       <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg md:mb-7 mb-5">Related Blogs</h1>
       <div class="swiper mySwiper">
-        <div class="swiper-wrapper gap-5">
-          <div class="swiper-slide">
-            <div class="bg-text-white relative">
-              <div class="p-5">
-                  <div class="relative">
-                      <img src="../build/assets/imgs/modal1.png" alt="" class="w-full" />
-                      <div class=" absolute bottom-0 left-0 p-4">
-                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
-                          <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-white uppercase">Dior Dior dior</h1>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bg-text-white relative">
-              <div class="p-5">
-                  <div class="relative">
-                      <img src="../build/assets/imgs/swiper2.png" alt="" class="w-full" />
-                      <div class=" absolute bottom-0 left-0 p-4">
-                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
-                          <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-white uppercase">Dior Spring Summer</h1>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bg-text-white relative">
-              <div class="p-5">
+        <div class="swiper-wrapper pb-10">
+          <div class="swiper-slide bg-white p-7">
+                <div class="">
+                  <img
+                    src="../build/assets/imgs/modal1.png"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
                   <div class="">
-                      <img src="../build/assets/imgs/swiper3.png" alt="" class="w-full" />
+                    <h1 class="Ogg-regular  italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+                    <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
                   </div>
+                  <a href="" class=" bg-bg-black flex py-3 text-text-white px-7  xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase nimbus_regular"> 
+                  Read Now
+                </a>
+                
+                
+                
+                </div>
+          </div>
+          <div class="swiper-slide bg-white p-7">
+            <div class="">
+              <img
+                src="../build/assets/imgs/modal3.png"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
+              <div class="">
+                <h1 class="Ogg-regular italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+                <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
               </div>
+              <a href="" class=" bg-bg-black flex py-3 text-text-white px-7  xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase nimbus_regular"> 
+              Read Now
+            </a>
+            
+            
+            
+            </div>
+      </div>
+      <div class="swiper-slide bg-white p-7">
+        <div class="">
+          <img
+            src="../build/assets/imgs/modal1.png"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
+          <div class="">
+            <h1 class="Ogg-regular italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+            <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
           </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="bg-text-white relative">
-              <div class="p-5">
-                  <div class="relative">
-                      <img src="../build/assets/imgs/modal1.png" alt="" class="w-full" />
-                      <div class=" absolute bottom-0 left-0 p-4">
-                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
-                          <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-white uppercase">Dior Dior dior</h1>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-         
-          
+          <a href="" class=" bg-bg-black flex py-3 text-text-white px-7  xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase nimbus_regular"> 
+          Read Now
+        </a>
+        
+        
+        
+        </div>
+  </div>
+  <div class="swiper-slide bg-white p-7">
+    <div class="">
+      <img
+        src="../build/assets/imgs/modal3.png"
+        alt=""
+        class="w-full"
+      />
+    </div>
+    <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
+      <div class="">
+        <h1 class="Ogg-regular italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+        <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
+      </div>
+      <a href="" class=" bg-bg-black flex py-3 text-text-white px-7 nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
+        Read Now
+      </a>
+    </div>
+</div>
         
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
- 
   </div>
-</section><br><br>
+</section>
 <!-- ============== RELETED BLOG DETAIL SECTION  END HERE========== -->
 
 
-    <!-- blog1 Section -->
-    <section class="text-center md:mt-9 mt-3">
-      <div
-        class="relative min-h-screen w-full flex items-end justify-start text-left bg-cover bg-no-repeat md:bg-center-none bg-center"
-        style="background-image: url(./assets/imgs/img2.png)"
-      >
-        <div class="p-5 z-10 justify-start">
-          <div class="flex text-white items-center">
-            <p>Sep 2, 2022</p>
-            <img src="./assets/imgs/circle.png" alt="" class="ml-5" />
-
-            <p class="ml-2">Fashion</p>
-          </div>
-          <a
-            href="#"
-            class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
-          >
-            DIOR DIOR
-            <span class="Ogg">DIOR</span>
-          </a>
+    <!-- blog2 Section -->
+    <section class=" h-screen bg-cover bg-no-repeat flex items-end pc:mt-[150px] md:mt-[5%] mt-5" style="background-image: url(./assets/imgs/img2.png)">
+      <div class="pl-[5%] pb-8">
+        <div class="text-xl nimbusl_regular text-text-color flex items-center gap-10">
+          <p>Sep 2 , 2022</p>
+          <ul class="list-disc">
+            <li>Fashion</li>
+          </ul>
         </div>
+        <h1 class="text-white pc:text-[78px] md:text-[56px] text-2xl nimbus pt-5"> DIOR DIOR <span class="Ogg-regular italic">DIOR </span>
+        </h1>
       </div>
     </section>
-    <!-- blog1 section end -->
+    <!-- blog2 section end -->
 
-    <!-- blog1 Section -->
-    <section class="text-center md:mt-9 mt-3">
-      <div
-        class="relative min-h-screen w-full flex items-end justify-start text-left bg-cover bg-no-repeat md:bg-center-none bg-center"
-        style="background-image: url(./assets/imgs/img3.png)"
-      >
-        <div class="p-5 z-10 justify-start">
-          <div class="flex text-white items-center">
-            <p>Sep 2, 2022</p>
-            <img src="./assets/imgs/circle.png" alt="" class="ml-5" />
 
-            <p class="ml-2">Fashion</p>
-          </div>
-          <a
-            href="#"
-            class="md:text-4xl text-xl tracking-tight font-medium leading-10 font-regular text-white"
-          >
-            VALENTINO IN
-            <span class="Ogg">MILANO</span>
-          </a>
+    <!-- blog3 Section -->
+    <section class=" h-screen bg-cover bg-no-repeat flex items-end" style="background-image: url(./assets/imgs/img3.png)">
+     
+      <div class="pl-[5%] pb-8">
+        <div class="text-xl nimbusl_regular text-text-color flex items-center gap-10">
+          <p>Sep 2 , 2022</p>
+          <ul class="list-disc">
+            <li>Fashion</li>
+          </ul>
         </div>
+        <h1 class="text-white pc:text-[78px] md:text-[56px] text-2xl nimbus pt-5">FENDI <span class="Ogg-regular">X <i>BENZEMA</i> </span>
+        </h1>
       </div>
     </section>
-    <!-- blog1 section end -->
 
     <!-- Google Add Section -->
-    <section class="text-center md:mt-9 mt-3">
+    <section class="text-center pc:m-[100px] md:m-[5%] m-[3%]">
       <div
-        class="p-5 w-full flex items-end justify-start text-left bg-cover bg-center"
+        class=" w-full flex bg-cover bg-center"
       >
         <img src="./assets/imgs/GOOGLEADD.png" alt="" class="w-full" />
       </div>

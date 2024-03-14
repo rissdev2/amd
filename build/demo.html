@@ -10,79 +10,42 @@
     />
   </head>
   <body class="bg-white">
-    <!-- ======================NAVBAR START HERE=============== -->
-    <div class="md:flex hidden flex-col">
-      <div class="bg-black text-center flex justify-center">
-        <div class="p-5 flex justify-center">
-          <a href="./index.html" class="flex justify-center">
-            <img src="./assets/imgs/Logo.png" alt="" class="lg:w-full w-2/4"
-          /></a>
-        </div>
-      </div>
-      <div class="flex justify-between bg-black items-center py-7">
-        <div class="basis-1/5"></div>
-        <div class="basis-3/5">
-          <ul class="flex text-white justify-between gap-9">
-            <li>
-              <a
-                href="./index.html"
-                class="uppercase font-bold pc:text-[26px] md:text-xl pc:leading-9 md:leading-7"
-                >Fashion</a
-              >
-            </li>
-            <li>
-              <a
-                href="./blog-page.html"
-                class="uppercase font-normal text-text-color pc:text-[26px] md:text-base pc:leading-9 md:leading-7"
-                >Grooming</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="uppercase font-normal text-text-color pc:text-[26px] md:text-base pc:leading-9 md:leading-7"
-                >Lifestyle</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="uppercase font-normal text-text-color pc:text-[26px] md:text-base pc:leading-9 md:leading-7"
-                >Culture</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="uppercase font-normal text-text-color pc:text-[26px] md:text-base pc:leading-9 md:leading-7"
-                >Trends</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="basis-1/5">
-          <div id="searchContainer" class="flex justify-end mr-16">
-            <button id="searchButton" class="focus:outline-none">
-              <img src="./assets/imgs/search_icon.png" alt="" />
-            </button>
-            <input
-              type="text"
-              id="searchInput"
-              class="hidden bg-white border border-gray-300 px-3 py-1 rounded-md md:w-full w-32 ml-5"
-              placeholder="Search..."
-            />
-          </div>
-        </div>
+
+
+ <!-- ======================NAVBAR START HERE=============== -->
+ <div class="md:flex hidden flex-col">
+  <div class=" bg-black text-center flex justify-center">
+    <div class="p-5 flex justify-center">
+      <a href="./index.html" class="flex justify-center"><img src="./assets/imgs/Logo.png" alt="" class="lg:w-full w-2/4" /></a>
+    </div>
+  </div>
+  <div class="flex justify-between bg-black items-center py-7">
+    <div class="basis-1/5"></div>
+    <div class="basis-3/5">
+      <ul class="flex text-white justify-between gap-9">
+        <li><a href="./index.html" class="uppercase  pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 nimbus">Fashion</a></li>
+        <li><a href="./blog-page.html" class="uppercase  text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 nimbus_regular">Grooming</a></li>
+        <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Lifestyle</a></li>
+        <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Culture</a></li>
+        <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Trends</a></li>
+      </ul>
+    </div>
+    <div class="basis-1/5">
+      <div id="searchContainer" class="flex justify-end mr-16">
+        <button id="searchButton" class="focus:outline-none">
+          <img src="./assets/imgs/search_icon.png" alt="" />
+        </button>
+        <input type="text" id="searchInput" class="hidden  bg-white border border-gray-300 px-3 py-1 rounded-md md:w-full w-32 ml-5" placeholder="Search..." />
       </div>
     </div>
-    <!-- Navigation Bar -->
-    <nav class="bg-black text-white p-4 md:hidden flex">
+  </div>
+</div>
+  <!-- Navigation Bar -->
+  <nav class="bg-black text-white p-4 md:hidden flex">
       <!-- Mobile Menu Button -->
       <div class="flex justify-between items-center">
         <div class="">
-          <a href="./index.html"
-            ><img src="./assets/imgs/Logo.png" alt="" class="w-2/5"
-          /></a>
+          <a href="./index.html"><img src="./assets/imgs/Logo.png" alt="" class="w-2/5" /></a>
         </div>
         <div class="">
           <button id="mobile-menu-btn" class="text-xl focus:outline-none">
@@ -103,56 +66,19 @@
           </button>
         </div>
       </div>
-    </nav>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
-      <ul
-        class="flex text-white justify-between flex-col text-center items-center"
-      >
-        <li>
-          <a
-            href="./index.html"
-            class="uppercase font-bold pc:text-[26px] md:text-xl pc:leading-9 md:leading-7 block py-2"
-            >Fashion</a
-          >
-        </li>
-        <li>
-          <a
-            href="./blog-page.html"
-            class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base pc:leading-9 md:leading-7"
-            >Grooming</a
-          >
-        </li>
-        <li>
-          <a
-            href=""
-            class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base pc:leading-9 md:leading-7"
-            >Lifestyle</a
-          >
-        </li>
-        <li>
-          <a
-            href=""
-            class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base pc:leading-9 md:leading-7"
-            >Culture</a
-          >
-        </li>
-        <li>
-          <a
-            href=""
-            class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base pc:leading-9 md:leading-7"
-            >Trends</a
-          >
-        </li>
-        <input
-          type="text"
-          id="searchInput"
-          class="bg-white border border-gray-300 px-3 py-2 rounded-md w-full"
-          placeholder="Search..."
-        />
-      </ul>
-    </div>
-    <!-- ======================NAVBAR END HERE=============== -->
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
+    <ul class="flex text-white justify-between flex-col text-center items-center">
+      <li><a href="./index.html" class="uppercase  pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 block py-2 nimbus">Fashion</a></li>
+      <li><a href="./blog-page.html" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 nimbus">Grooming</a></li>
+      <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
+      <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
+      <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+        <input type="text" id="searchInput" class="  bg-white border border-gray-300 px-3 py-2 rounded-md w-full" placeholder="Search..." />
+    </ul>
+  </div>
+  <!-- ======================NAVBAR END HERE=============== -->
 
     <!-- Google Add Section -->
     <section class="text-center">
@@ -167,12 +93,12 @@
     <br />
     <br />
 
-    <!-- blog1 Section -->
-    <section class="md:p-[3%] p-[5%]">
+     <!-- blog1 Section -->
+     <section class="md:p-[3%] p-[5%]">
       <div class="flex md:flex-row flex-col gap-10">
         <div class="md:w-2/4 w-full">
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper md:pb-16 pb-5">
+            <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="text-center">
                   <div
@@ -182,7 +108,7 @@
                     <div class="p-5 z-10 justify-center">
                       <a
                         href="#"
-                        class="md:text-xl text-base nimbus leading-10 text-white"
+                        class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white"
                       >
                         Source : Fashion Collection
                       </a>
@@ -207,7 +133,7 @@
                     <div class="p-5 z-10 justify-center">
                       <a
                         href="#"
-                        class="md:text-xl text-base nimbus leading-10 text-white"
+                        class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white"
                       >
                         Source : Fashion Collection
                       </a>
@@ -232,7 +158,7 @@
                     <div class="p-5 z-10 justify-center">
                       <a
                         href="#"
-                        class="md:text-xl text-base nimbus leading-10 text-white"
+                        class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white"
                       >
                         Source : Fashion Collection
                       </a>
@@ -258,7 +184,7 @@
             <div class="">
               <div class="grid md:grid-cols-3 grid-cols-2 gap-5">
                 <p
-                  class="nimbus md:text-lg text-[12px] text-text-color leading-5"
+                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
                 >
                   Sep 2 , 2022
                 </p>
@@ -271,7 +197,7 @@
                     />
                   </div>
                   <p
-                    class="nimbus md:text-lg text-[12px] text-text-color leading-5"
+                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
                   >
                     By kashan Bhatti
                   </p>
@@ -285,7 +211,7 @@
                     />
                   </div>
                   <p
-                    class="nimbus md:text-lg text-[12px] text-text-color leading-5"
+                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
                   >
                     Fashion
                   </p>
@@ -298,24 +224,27 @@
           <div class="flex lg:flex-row flex-col">
             <div class="">
               <div class="pt-5">
-                <h1 class="text-black md:text-5xl text-xl nimbus leading-10">
-                  FENDI <span class="Ogg-regular">X <i>BENZEMA</i> </span>
+                <h1
+                  class="ogg md:text-5xl text-xl font-bold leading-10 text-black"
+                >
+                  FENDI <span class="font-normal">X</span>
+                  <span class="nimbus font-normal italic"> BENZEMA</span>
                 </h1>
-
                 <p
-                  class="nimbus_regular md:text-[26px] text-[12px] text-text-color md:pt-3 pt-1 md:leading-[50px] leading-5">
+                  class="nimbus font-thin md:text-lg text-[12px] text-gray-600 md:pt-3 pt-1 md:!leading-[40px] leading-5"
+                >
                   The new Official FENDI Faster Ambassador, Benzema embodies the
                   progressive spirit of the Maison's latest sneaker design – as
                   a world-beating athlete with Real Madrid and recently UEFA
                   Men’s Player of the Year, Karim is known as an exemplary
                   player and a true professional, making the decorated striker
-                  an ideal ambassador for the FENDI Faster. <br/>
+                  an ideal ambassador for the FENDI Faster. <br />
                   With his unmatched talent and relentless drive, Benzema has
                   propelled himself to the pinnacle of football success,
                   capturing the hearts of fans worldwide. As a symbol of
                   excellence and dedication, he embodies the values of
                   craftsmanship and precision that define FENDI's commitment to
-                  delivering exceptional quality and style. <br/>
+                  delivering exceptional quality and style. <br />
                   With his unmatched talent and relentless drive, Benzema has
                   propelled himself to the pinnacle of football success,
                   capturing the hearts of fans worldwide.
@@ -333,7 +262,7 @@
             <div class="">
               <div class="">
                 <p
-                  class="nimbus_regular md:text-[26px] text-[12px] text-text-color md:pt-3 pt-1 md:leading-[50px] leading-5"
+                  class="nimbus font-thin md:text-lg text-[12px] text-gray-600 md:pt-3 pt-1 md:!leading-[40px] leading-5"
                 >
                   The new Official FENDI Faster Ambassador, Benzema embodies the
                   progressive spirit of the Maison's latest sneaker design – as
@@ -366,7 +295,7 @@
         </div>
         <div class="md:w-2/4 w-full">
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper md:pb-16 pb-5">
+            <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="text-center">
                   <div
@@ -376,7 +305,7 @@
                     <div class="p-5 z-10 justify-center">
                       <a
                         href="#"
-                        class="md:text-xl text-base nimbus leading-10 text-white"
+                        class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white"
                       >
                         Source : Fashion Collection
                       </a>
@@ -396,13 +325,13 @@
               <div class="swiper-slide">
                 <div class="text-center">
                   <div
-                    class="relative min-h-screen w-full h-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
+                    class="relative  min-h-screen w-full h-full flex items-end justify-center text-center bg-no-repeat bg-cover object-cover"
                     style="background-image: url(./assets/imgs/Slide1.png)"
                   >
                     <div class="p-5 z-10 justify-center">
                       <a
                         href="#"
-                        class="md:text-xl text-base nimbus leading-10 text-white"
+                        class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white"
                       >
                         Source : Fashion Collection
                       </a>
@@ -419,7 +348,7 @@
                     <div class="p-5 z-10 justify-center">
                       <a
                         href="#"
-                        class="md:text-xl text-base nimbus leading-10 text-white"
+                        class="md:text-xl text-base tracking-tight font-medium leading-10 font-regular text-white"
                       >
                         Source : Fashion Collection
                       </a>
@@ -445,53 +374,54 @@
       <div class="md:w-3/4 w-full">
         <div class="">
           <div
-          class="grid md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-7 grid-cols-2 gap-4 pc:pt-[78px] md:pt-12 pt-5"
-        >
-          <button
-            class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
+            class="grid md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-7 grid-cols-2 gap-4 pt-5"
           >
-            Fashion
-          </button>
-          <button
-            class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
-          >
-            Elegance
-          </button>
-          <button
-            class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
-          >
-            Lifestyle
-          </button>
-          <button
-            class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
-          >
-            Style
-          </button>
-          <button
-            class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
-          >
-            Fitness
-          </button>
-          <button
-            class="py-2 text-text-color font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
-          >
-            Relationships
-          </button>
-          <button
-            class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
-          >
-            Career
-          </button>
+            <button
+              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+            >
+              Fashion
+            </button>
+            <button
+              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+            >
+              Elegance
+            </button>
+            <button
+              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+            >
+              Lifestyle
+            </button>
+            <button
+              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+            >
+              Style
+            </button>
+            <button
+              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+            >
+              Fitness
+            </button>
+            <button
+              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+            >
+              Relationships
+            </button>
+            <button
+              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+            >
+              Career
+            </button>
+          </div>
         </div>
-        </div>
+        
       </div>
       <hr class="w-[100%] text-text-color mt-6" />
       <br />
       <div class="flex justify-center">
         <button
-          class="items-center gap-3 bg-black flex py-3 text-white px-10 nimbus_regular md:text-lg text-[12px] border border-black uppercase"
+          class="items-center gap-3 bg-black flex py-3 text-white px-10 nimbus font-normal md:text-lg text-[12px] border border-black uppercase"
         >
-          <img src="../build/assets/imgs/copy-icon.png" alt="" />
+          <img src="../build/assets/imgs/copy-icon.png" alt=""/>
           Copy link
         </button>
       </div>
@@ -511,132 +441,134 @@
     <!-- Google Add section end -->
 
     <br /><br />
-   <!-- ============== RELETED BLOG DETAIL SECTION  START HERE========== -->
-   <section>
-    <div class="bg-bg-black">
-      <div class="md:p-[5%] p-5 ">
-        <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg md:mb-7 mb-5">Related Blogs</h1>
-        <div class="swiper mySwiper2">
-          <div class="swiper-wrapper pb-10">
-            <div class="swiper-slide bg-white p-7">
+<!-- ============== RELETED BLOG DETAIL SECTION  START HERE========== -->
+<section>
+  <div class="bg-bg-black">
+    <div class="md:p-10 p-5">
+      <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg md:mb-7 mb-5">Related Blogs</h1>
+      <div class="swiper mySwiper4">
+        <div class="swiper-wrapper gap-5">
+          <div class="swiper-slide">
+            <div class="bg-text-white">
+              <div class="p-5">
+                <div class="">
+                  <img
+                    src="../build/assets/imgs/modal1.png"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
                   <div class="">
-                    <img
-                      src="../build/assets/imgs/modal1.png"
-                      alt=""
-                      class="w-full"
-                    />
+                    <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+                    <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
                   </div>
-                  <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
-                    <div class="">
-                      <h1 class="Ogg-regular  italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
-                      <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
-                    </div>
-                    <a href="" class=" bg-bg-black flex py-3 text-text-white px-7  xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase nimbus_regular"> 
+                  <a href="" class=" bg-bg-black flex py-3 text-text-white px-7 nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
+                  Read Now
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-text-white">
+              <div class="p-5">
+                <div class="">
+                  <img
+                    src="../build/assets/imgs/modal2.png"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-text-white">
+              <div class="p-5">
+                <div class="">
+                  <img
+                    src="../build/assets/imgs/modal3.png"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
+                  <div class="">
+                    <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+                    <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
+                  </div>
+                  <a href="" class=" bg-bg-black flex py-3 text-text-white px-7 nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
                     Read Now
                   </a>
-                  
-                  
-                  
-                  </div>
-            </div>
-            <div class="swiper-slide bg-white p-7">
-              <div class="">
-                <img
-                  src="../build/assets/imgs/modal3.png"
-                  alt=""
-                  class="w-full"
-                />
-              </div>
-              <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
-                <div class="">
-                  <h1 class="Ogg-regular italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
-                  <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
                 </div>
-                <a href="" class=" bg-bg-black flex py-3 text-text-white px-7  xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase nimbus_regular"> 
-                Read Now
-              </a>
-              
-              
-              
               </div>
-        </div>
-        <div class="swiper-slide bg-white p-7">
-          <div class="">
-            <img
-              src="../build/assets/imgs/modal1.png"
-              alt=""
-              class="w-full"
-            />
-          </div>
-          <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
-            <div class="">
-              <h1 class="Ogg-regular italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
-              <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
             </div>
-            <a href="" class=" bg-bg-black flex py-3 text-text-white px-7  xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase nimbus_regular"> 
-            Read Now
-          </a>
-          
-          
-          
           </div>
-    </div>
-    <div class="swiper-slide bg-white p-7">
-      <div class="">
-        <img
-          src="../build/assets/imgs/modal3.png"
-          alt=""
-          class="w-full"
-        />
-      </div>
-      <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
-        <div class="">
-          <h1 class="Ogg-regular italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
-          <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
-        </div>
-        <a href="" class=" bg-bg-black flex py-3 text-text-white px-7 nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
-          Read Now
-        </a>
-      </div>
-</div>
-          
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-      <div class="p-[5%]">
-        <div class="text-center flex items-center flex-col">
-          <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg nimbus">join our community</h1>
-          <p class="nimbus font-normal md:text-xl text-[12px] text-text-white pt-5 nimbus_regular">Join our exclusive community and elevate your lifestyle with AMDmode: where elegance meets intelligence and <br>sophistication transcends convention.</p>
-
-
-          <form class="md:w-3/5 w-full pc:pt-[100px] md:pt-10 pt-5">
-            <div class="flex items-center border-b border-whie py-2 justify-between">
-              <input class="capitalize appearance-none italic bg-transparent border-none w-3/5 text-white  py-1 px-2 leading-tight focus:outline-none md:text-lg text-sm nimbus_regular" type="email" placeholder="enter your email" aria-label="email">
-              <button class="flex-shrink-0 bg-white text-black text-sm   md:px-10 px-5 md:py-3 py-2 uppercase nimbus font-normal md:text-lg nimbus_regular" type="button">
-                Subscribe
-              </button>
-              
+          <div class="swiper-slide">
+            <div class="bg-text-white">
+              <div class="p-5">
+                <div class="">
+                  <img
+                    src="../build/assets/imgs/modal1.png"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
+                  <div class="">
+                    <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+                    <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
+                  </div>
+                  <a href="" class=" bg-bg-black flex py-3 text-text-white px-7 nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
+                    Read Now
+                  </a>
+                </div>
+              </div>
             </div>
-          </form>
-       
+          </div>
+          
+        
         </div>
-
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-  </section><br><br>
-  <!-- ============== RELETED BLOG DETAIL SECTION  END HERE========== -->
+    <div class="p-[5%]">
+      <div class="text-center flex items-center flex-col">
+        <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg">join our community</h1>
+        <p class="nimbus font-normal md:text-lg text-[12px] text-text-white pt-5">Join our exclusive community and elevate your lifestyle with AMDmode: where elegance meets intelligence and <br>sophistication transcends convention.</p>
 
 
+        <form class="md:w-3/5 w-full md:pt-10 pt-5">
+          <div class="flex items-center border-b border-whie py-2 justify-between">
+            <input class="capitalize appearance-none bg-transparent border-none w-3/5 text-white  py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="enter your email" aria-label="email">
+            <button class="flex-shrink-0 bg-white text-black text-sm   md:px-10 px-5 md:py-3 py-2 uppercase nimbus font-normal md:text-lg " type="button">
+              Subscribe
+            </button>
+            
+          </div>
+        </form>
+     
+      </div>
 
-       
-    <!-- ==============GOOGLE HEADER SECTION START HERE========== -->
+    </div>
+  </div>
+</section><br><br>
+<!-- ============== RELETED BLOG DETAIL SECTION  END HERE========== -->
+
+
+    <br /><br />
+
+    <!-- Google Add Section -->
     <section class="text-center">
-      <div class="md:p-10 p-3 w-full bg-cover bg-center">
+      <div
+        class="p-5 w-full flex items-end justify-start text-left bg-cover bg-center"
+      >
         <img src="./assets/imgs/GOOGLEADD.png" alt="" class="w-full" />
       </div>
-    </section> <br><br>
-    <!-- ==============GOOGLE HEADER SECTION END HERE========== -->
+    </section>
+    <!-- Google Add section end -->
 
     <br /><br />
     <!-- ==============FOOTER SECTION START HERE========== -->
@@ -711,13 +643,15 @@
     <!-- ==============FOOTER SECTION END HERE========== -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+
 
     <script>
-      var swiper = new Swiper(".mySwiper2", {
+      var swiper = new Swiper('.mySwiper4', {
         slidesPerView: 1, // Default slides per view
         spaceBetween: 10, // Adjust spacing as needed
         loop: true,
-
+    
         // Responsive breakpoints
         breakpoints: {
           320: {
@@ -733,14 +667,15 @@
             slidesPerView: 3, // Show 3 slides on large devices
           },
         },
-
+    
         // Other Swiper configurations as needed
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
         },
       });
     </script>
+
 
     <!-- Initialize Swiper -->
     <script>
@@ -753,38 +688,37 @@
       });
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function() {
         var searchButton = document.getElementById("searchButton");
         var searchInput = document.getElementById("searchInput");
         var searchContainer = document.getElementById("searchContainer");
-
-        searchButton.addEventListener("click", function () {
+    
+        searchButton.addEventListener("click", function() {
           searchInput.classList.toggle("hidden");
           searchButton.classList.add("hidden");
         });
-
-        searchInput.addEventListener("blur", function () {
+    
+        searchInput.addEventListener("blur", function() {
           if (searchInput.value === "") {
             searchInput.classList.add("hidden");
             searchButton.classList.remove("hidden");
           }
+         
         });
-        searchButton.addEventListener("click", function () {
+        searchButton.addEventListener("click", function() {
           if (searchContainer.classList.contains("mr-16")) {
-            searchContainer.classList.remove("mr-16");
-            searchContainer.classList.add("mr-5");
-          } else {
-            searchContainer.classList.remove("mr-");
-            searchContainer.classList.add("mr-16");
-          }
-        });
+                    searchContainer.classList.remove("mr-16");
+                    searchContainer.classList.add("mr-5");
+                } else {
+                    searchContainer.classList.remove("mr-");
+                    searchContainer.classList.add("mr-16");
+                }
+            });
       });
       // Toggle mobile menu visibility
-      document
-        .getElementById("mobile-menu-btn")
-        .addEventListener("click", function () {
-          document.getElementById("mobile-menu").classList.toggle("hidden");
-        });
+      document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+          document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
     </script>
   </body>
 </html>

@@ -8,73 +8,73 @@
       rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
- <!-- ======================NAVBAR START HERE=============== -->
- <div class="md:flex hidden flex-col">
-  <div class=" bg-black text-center flex justify-center">
-    <div class="p-5 flex justify-center">
-      <a href="./index.html" class="flex justify-center"><img src="./assets/imgs/Logo.png" alt="" class="lg:w-full w-2/4" /></a>
+  <!-- ======================NAVBAR START HERE=============== -->
+  <div class="md:flex hidden flex-col">
+    <div class=" bg-black text-center flex justify-center">
+      <div class="p-5 flex justify-center">
+        <a href="./index.html" class="flex justify-center"><img src="./assets/imgs/Logo.png" alt="" class="lg:w-full w-2/4" /></a>
+      </div>
+    </div>
+    <div class="flex justify-between bg-black items-center py-7">
+      <div class="basis-1/5"></div>
+      <div class="basis-3/5">
+        <ul class="flex text-white justify-between gap-9">
+          <li><a href="./index.html" class="uppercase  pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 nimbus">Fashion</a></li>
+          <li><a href="./blog-page.html" class="uppercase  text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 nimbus_regular">Grooming</a></li>
+          <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Lifestyle</a></li>
+          <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Culture</a></li>
+          <li><a href="" class="uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 ">Trends</a></li>
+        </ul>
+      </div>
+      <div class="basis-1/5">
+        <div id="searchContainer" class="flex justify-end mr-16">
+          <button id="searchButton" class="focus:outline-none">
+            <img src="./assets/imgs/search_icon.png" alt="" />
+          </button>
+          <input type="text" id="searchInput" class="hidden  bg-white border border-gray-300 px-3 py-1 rounded-md md:w-full w-32 ml-5" placeholder="Search..." />
+        </div>
+      </div>
     </div>
   </div>
-  <div class="flex justify-between bg-black items-center py-7">
-    <div class="basis-1/5"></div>
-    <div class="basis-3/5">
-      <ul class="flex text-white justify-between gap-9">
-        <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7">Fashion</a></li>
-        <li><a href="./blog-page.html" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
-        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
-        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
-        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+    <!-- Navigation Bar -->
+    <nav class="bg-black text-white p-4 md:hidden flex">
+        <!-- Mobile Menu Button -->
+        <div class="flex justify-between items-center">
+          <div class="">
+            <a href="./index.html"><img src="./assets/imgs/Logo.png" alt="" class="w-2/5" /></a>
+          </div>
+          <div class="">
+            <button id="mobile-menu-btn" class="text-xl focus:outline-none">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
+      <ul class="flex text-white justify-between flex-col text-center items-center">
+        <li><a href="./index.html" class="uppercase  pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 block py-2 nimbus">Fashion</a></li>
+        <li><a href="./blog-page.html" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7 nimbus">Grooming</a></li>
+        <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
+        <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
+        <li><a href="" class="block py-2 uppercase nimbus_regular text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+          <input type="text" id="searchInput" class="  bg-white border border-gray-300 px-3 py-2 rounded-md w-full" placeholder="Search..." />
       </ul>
     </div>
-    <div class="basis-1/5">
-      <div id="searchContainer" class="flex justify-end mr-16">
-        <button id="searchButton" class="focus:outline-none">
-          <img src="./assets/imgs/search_icon.png" alt="" />
-        </button>
-        <input type="text" id="searchInput" class="hidden  bg-white border border-gray-300 px-3 py-1 rounded-md md:w-full w-32 ml-5" placeholder="Search..." />
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- Navigation Bar -->
-  <nav class="bg-black text-white p-4 md:hidden flex">
-      <!-- Mobile Menu Button -->
-      <div class="flex justify-between items-center">
-        <div class="">
-          <a href="./index.html"><img src="./assets/imgs/Logo.png" alt="" class="w-2/5" /></a>
-        </div>
-        <div class="">
-          <button id="mobile-menu-btn" class="text-xl focus:outline-none">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-  </nav>
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
-    <ul class="flex text-white justify-between flex-col text-center items-center">
-      <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 block py-2">Fashion</a></li>
-      <li><a href="./blog-page.html" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
-      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
-      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
-      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
-        <input type="text" id="searchInput" class="  bg-white border border-gray-300 px-3 py-2 rounded-md w-full" placeholder="Search..." />
-    </ul>
-  </div>
-  <!-- ======================NAVBAR END HERE=============== -->
+    <!-- ======================NAVBAR END HERE=============== -->
 
     <!-- ==============GOOGLE HEADER SECTION START HERE========== -->
     <section class="text-center">
@@ -105,63 +105,23 @@
       </div>
       
       <div
-        class="text-center font-normal md:text-2xl text-sm leading-6 text-text-color nimbus pt-2"
+        class="text-center font-normal md:text-2xl text-sm leading-6 text-text-color pt-2"
       >
-        <p>Source : Fashion Collection</p>
+        <p class="nimbus_regular">Source : Fashion Collection</p>
       </div>
     </section>
     <!-- ================FASHION IMAGES SECTION END HERE=================== -->
     <br><br>
     <!-- ==============BLOG DETAIL SECTION PART 1 END HERE========== -->
     <section class="pc:p-[100px] p-[5%]">
-      <!-- <div class="flex">
-        <div class="md:basis-9/12 basis-full">
-          <div class="flex gap-5">
-            <p
-              class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-            >
-              Sep 2 , 2022
-            </p>
-            <div class="flex items-center gap-3">
-              <div>
-                <img
-                  src="../build/assets/imgs/circle.png"
-                  alt=""
-                  class="w-full"
-                />
-              </div>
-              <p
-                class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-              >
-                By kashan Bhatti
-              </p>
-            </div>
-            <div class="flex items-center gap-3">
-              <div>
-                <img
-                  src="../build/assets/imgs/circle.png"
-                  alt=""
-                  class="w-full"
-                />
-              </div>
-              <p
-                class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
-              >
-                Fashion
-              </p>
-            </div>
-          </div>
-          <hr class="w-[95%] text-text-color mt-2" />
-        </div>
-      </div> -->
       <div class="flex lg:flex-row flex-col md:gap-10 gap-5">
 
         <div class="basis-3/5">
           <div class="flex">
             <div class="basis-full">
-              <div class="flex gap-5">
+              <div class="flex md:gap-5 gap-3">
                 <p
-                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                  class=" md:text-lg text-[12px] text-text-color leading-5 nimbus"
                 >
                   Sep 2 , 2022
                 </p>
@@ -174,7 +134,7 @@
                     />
                   </div>
                   <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                    class=" md:text-lg text-[12px] text-text-color leading-5 capitalize nimbus"
                   >
                     By kashan Bhatti
                   </p>
@@ -188,7 +148,7 @@
                     />
                   </div>
                   <p
-                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                    class=" md:text-lg text-[12px] text-text-color leading-5 nimbus"
                   >
                     Fashion
                   </p>
@@ -198,11 +158,11 @@
             </div>
           </div>
           <div class="pt-5">
-            <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
+            <h1 class="md:text-5xl text-xl font-bold leading-10 text-black nimbus">
               FENDI <span class="font-normal">X</span>
               <span class="nimbus font-normal italic"> BENZEMA</span>
             </h1>
-            <p class="nimbus font-thin md:text-xl text-[12px] text-text-color md:leading-[36px] pc:leading-[36px] leading-5 capitalize pt-[10px]">
+            <p class="nimbus_regular font-thin md:text-xl text-[12px] text-text-color md:leading-[36px] pc:leading-[36px] leading-5 capitalize pt-[10px]">
               The new Official FENDI Faster Ambassador, Benzema embodies the
               progressive spirit of the Maison's latest sneaker design – as a
               world-beating athlete with Real Madrid and recently UEFA Men’s
@@ -210,7 +170,7 @@
               true professional, making the decorated striker an ideal
               ambassador for the FENDI Faster.
             </p>
-            <p class="pc:leading-[52px] md:leading-[46px] leading-5 nimbus font-thin md:text-xl text-[12px] text-text-color md:pt-3 pt-[10px] capitalize">
+            <p class="nimbus_regular pc:leading-[52px] md:leading-[46px] leading-5 font-thin  md:text-xl text-[12px] text-text-color md:pt-3 pt-[10px] capitalize">
               The new FENDI sneakers features a
               technical fabrics and high-end athletic touches.<br>
               The FENDI Faster is balanced by the characteristic luxury which
@@ -225,37 +185,37 @@
             class="grid md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-7 grid-cols-2 gap-4 pc:pt-[78px] md:pt-12 pt-5"
           >
             <button
-              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+              class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
             >
               Fashion
             </button>
             <button
-              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+              class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
             >
               Elegance
             </button>
             <button
-              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+              class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
             >
               Lifestyle
             </button>
             <button
-              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+              class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
             >
               Style
             </button>
             <button
-              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+              class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
             >
               Fitness
             </button>
             <button
-              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+              class="py-2 text-text-color font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
             >
               Relationships
             </button>
             <button
-              class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
+              class="py-2 text-text-color  font-normal md:text-lg text-[12px] border border-text-color nimbus_regular"
             >
               Career
             </button>
@@ -274,7 +234,7 @@
       <hr class="w-[100%] text-text-color mt-[30px]" />
       <div class="flex justify-center mt-[30px]">
         <button
-          class="items-center gap-3 bg-bg-black flex py-3 text-text-white px-10 nimbus font-normal md:text-lg text-[12px] border border-black uppercase"
+          class="items-center gap-3 bg-bg-black flex py-3 text-text-white px-10 tracking-wide md:text-lg text-[12px] border border-black uppercase nimbus_regular"
         >
           <img src="../build/assets/imgs/copy-icon.png" alt="" />
           Copy link
@@ -286,13 +246,11 @@
     <!-- ============== RELETED BLOG DETAIL SECTION  START HERE========== -->
     <section>
       <div class="bg-bg-black">
-        <div class="md:p-10 p-5">
+        <div class="md:p-[5%] p-5 ">
           <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg md:mb-7 mb-5">Related Blogs</h1>
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper gap-5">
-              <div class="swiper-slide">
-                <div class="bg-text-white">
-                  <div class="p-5">
+            <div class="swiper-wrapper pb-10">
+              <div class="swiper-slide bg-white p-7">
                     <div class="">
                       <img
                         src="../build/assets/imgs/modal1.png"
@@ -302,78 +260,77 @@
                     </div>
                     <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
                       <div class="">
-                        <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
-                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
+                        <h1 class="Ogg-regular  italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
                       </div>
-                      <a href="" class=" bg-bg-black flex py-3 text-text-white px-7 nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
+                      <a href="" class=" bg-bg-black flex py-3 text-text-white px-7  xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase nimbus_regular"> 
                       Read Now
                     </a>
                     
                     
                     
                     </div>
-                  </div>
-                </div>
               </div>
-              <div class="swiper-slide">
-                <div class="bg-text-white">
-                  <div class="p-5">
-                    <div class="">
-                      <img
-                        src="../build/assets/imgs/modal2.png"
-                        alt=""
-                        class="w-full"
-                      />
-                    </div>
-                    
-                  </div>
+              <div class="swiper-slide bg-white p-7">
+                <div class="">
+                  <img
+                    src="../build/assets/imgs/modal3.png"
+                    alt=""
+                    class="w-full"
+                  />
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bg-text-white">
-                  <div class="p-5">
-                    <div class="">
-                      <img
-                        src="../build/assets/imgs/modal3.png"
-                        alt=""
-                        class="w-full"
-                      />
-                    </div>
-                    <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
-                      <div class="">
-                        <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
-                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
-                      </div>
-                      <a href="" class=" bg-bg-black flex py-3 text-text-white px-7 nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
-                        Read Now
-                      </a>
-                    </div>
+                <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
+                  <div class="">
+                    <h1 class="Ogg-regular italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+                    <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
                   </div>
+                  <a href="" class=" bg-bg-black flex py-3 text-text-white px-7  xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase nimbus_regular"> 
+                  Read Now
+                </a>
+                
+                
+                
                 </div>
+          </div>
+          <div class="swiper-slide bg-white p-7">
+            <div class="">
+              <img
+                src="../build/assets/imgs/modal1.png"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
+              <div class="">
+                <h1 class="Ogg-regular italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+                <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bg-text-white">
-                  <div class="p-5">
-                    <div class="">
-                      <img
-                        src="../build/assets/imgs/modal1.png"
-                        alt=""
-                        class="w-full"
-                      />
-                    </div>
-                    <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
-                      <div class="">
-                        <h1 class="ogg font-normal italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
-                        <p class="nimbus font-normal md:text-base text-[12px] text-text-color">Nov 11, 2022</p>
-                      </div>
-                      <a href="" class=" bg-bg-black flex py-3 text-text-white px-7 nimbus font-normal xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
-                        Read Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
+              <a href="" class=" bg-bg-black flex py-3 text-text-white px-7  xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase nimbus_regular"> 
+              Read Now
+            </a>
+            
+            
+            
+            </div>
+      </div>
+      <div class="swiper-slide bg-white p-7">
+        <div class="">
+          <img
+            src="../build/assets/imgs/modal3.png"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="pt-5 flex justify-between md:pb-5 pb-2 md:flex-row flex-col md:gap-0 gap-4">
+          <div class="">
+            <h1 class="Ogg-regular italic xl:text-2xl lg:text-xl md:text-base text-sm text-bg-black uppercase">Dior Dior dior</h1>
+            <p class="nimbus font-normal md:text-base text-[12px] text-text-color nimbus_regular">Nov 11, 2022</p>
+          </div>
+          <a href="" class=" bg-bg-black flex py-3 text-text-white px-7 nimbus_regular xl:text-lg lg:text-base text-center items-center justify-center md:text-base text-[12px] border border-black uppercase"> 
+            Read Now
+          </a>
+        </div>
+  </div>
             
             </div>
             <div class="swiper-pagination"></div>
@@ -381,14 +338,14 @@
         </div>
         <div class="p-[5%]">
           <div class="text-center flex items-center flex-col">
-            <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg">join our community</h1>
-            <p class="nimbus font-normal md:text-lg text-[12px] text-text-white pt-5">Join our exclusive community and elevate your lifestyle with AMDmode: where elegance meets intelligence and <br>sophistication transcends convention.</p>
+            <h1 class="text-text-white uppercase nimbus font-bold md:text-[48px] text-lg nimbus">join our community</h1>
+            <p class="nimbus font-normal md:text-xl text-[12px] text-text-white pt-5 nimbus_regular">Join our exclusive community and elevate your lifestyle with AMDmode: where elegance meets intelligence and <br>sophistication transcends convention.</p>
 
 
-            <form class="md:w-3/5 w-full md:pt-10 pt-5">
+            <form class="md:w-3/5 w-full pc:pt-[100px] md:pt-10 pt-5">
               <div class="flex items-center border-b border-whie py-2 justify-between">
-                <input class="capitalize appearance-none bg-transparent border-none w-3/5 text-white  py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="enter your email" aria-label="email">
-                <button class="flex-shrink-0 bg-white text-black text-sm   md:px-10 px-5 md:py-3 py-2 uppercase nimbus font-normal md:text-lg " type="button">
+                <input class="capitalize appearance-none italic bg-transparent border-none w-3/5 text-white  py-1 px-2 leading-tight focus:outline-none md:text-lg text-sm nimbus_regular" type="email" placeholder="enter your email" aria-label="email">
+                <button class="flex-shrink-0 bg-white text-black text-sm   md:px-10 px-5 md:py-3 py-2 uppercase nimbus font-normal md:text-lg nimbus_regular" type="button">
                   Subscribe
                 </button>
                 
@@ -461,7 +418,7 @@
     <script>
       var swiper = new Swiper('.mySwiper', {
         slidesPerView: 1, // Default slides per view
-        spaceBetween: 10, // Adjust spacing as needed
+        spaceBetween: 20, // Adjust spacing as needed
         loop: true,
     
         // Responsive breakpoints
