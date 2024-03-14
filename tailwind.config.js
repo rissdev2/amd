@@ -2,6 +2,7 @@
 module.exports = {
     content: ["./build/*.html"],
     theme: {
+      
      
         extend: {
             backgroundImage: {
@@ -11,6 +12,11 @@ module.exports = {
                 'text-color':'#A4A4A4',    
                 'bg-black':'#000',    
                 'text-white':'#fff',    
+          },
+          screens: {
+            
+            'pc': '1920px',
+            // => @media (min-width: 1280px) { ... }
           },
         },
     },

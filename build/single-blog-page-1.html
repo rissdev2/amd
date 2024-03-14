@@ -8,58 +8,73 @@
       rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
-<!-- ======================NAVBAR START HERE=============== -->
-<div class="header bg-black text-center flex justify-center">
-  <div class="p-5">
-    <img src="./assets/imgs/Logo.png" alt="" class="h-[65px]">
-
+ <!-- ======================NAVBAR START HERE=============== -->
+ <div class="md:flex hidden flex-col">
+  <div class=" bg-black text-center flex justify-center">
+    <div class="p-5 flex justify-center">
+      <a href="./index.html" class="flex justify-center"><img src="./assets/imgs/Logo.png" alt="" class="lg:w-full w-2/4" /></a>
+    </div>
+  </div>
+  <div class="flex justify-between bg-black items-center py-7">
+    <div class="basis-1/5"></div>
+    <div class="basis-3/5">
+      <ul class="flex text-white justify-between gap-9">
+        <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7">Fashion</a></li>
+        <li><a href="./blog-page.html" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
+        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
+        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
+        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+      </ul>
+    </div>
+    <div class="basis-1/5">
+      <div id="searchContainer" class="flex justify-end mr-16">
+        <button id="searchButton" class="focus:outline-none">
+          <img src="./assets/imgs/search_icon.png" alt="" />
+        </button>
+        <input type="text" id="searchInput" class="hidden  bg-white border border-gray-300 px-3 py-1 rounded-md md:w-full w-32 ml-5" placeholder="Search..." />
+      </div>
+    </div>
   </div>
 </div>
- <!-- Navigation Bar -->
- <nav class="bg-black text-white p-4">
-
-  <!-- Container for Centering -->
-  <div class="container mx-auto flex justify-between items-center">
-
-      <!-- Navigation Links -->
-      <div class="flex items-center">
-        <input type="text" placeholder="Search..." class="p-2 border border-gray-700 rounded-md focus:outline-none">
-        <button class="ml-2 focus:outline-none">
-          <img src="./assets/imgs/search_icon.png" alt="">
-        </button>
-    </div>
-
+  <!-- Navigation Bar -->
+  <nav class="bg-black text-white p-4 md:hidden flex">
       <!-- Mobile Menu Button -->
-      <div class="md:hidden">
+      <div class="flex justify-between items-center">
+        <div class="">
+          <a href="./index.html"><img src="./assets/imgs/Logo.png" alt="" class="w-2/5" /></a>
+        </div>
+        <div class="">
           <button id="mobile-menu-btn" class="text-xl focus:outline-none">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
           </button>
+        </div>
       </div>
-
-      <!-- Navigation Links -->
-      <div class="hidden md:flex space-x-4">
-          <a href="#" class="hover:text-gray-300">Home</a>
-          <a href="./blog-page.html" class="hover:text-gray-300">About</a>
-          <a href="#" class="hover:text-gray-300">Services</a>
-          <a href="#" class="hover:text-gray-300">Contact</a>
-      </div>
-
-  </div> <!-- End Container -->
-
-</nav> <!-- End Navigation Bar -->
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
-  <a href="#" class="block py-2">Home</a>
-  <a href="./blog-page.html" class="block py-2">About</a>
-  <a href="#" class="block py-2">Services</a>
-  <a href="#" class="block py-2">Contact</a>
-</div>
-<!-- ======================NAVBAR END HERE=============== -->
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
+    <ul class="flex text-white justify-between flex-col text-center items-center">
+      <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 block py-2">Fashion</a></li>
+      <li><a href="./blog-page.html" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
+      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
+      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
+      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+        <input type="text" id="searchInput" class="  bg-white border border-gray-300 px-3 py-2 rounded-md w-full" placeholder="Search..." />
+    </ul>
+  </div>
+  <!-- ======================NAVBAR END HERE=============== -->
 
     <!-- ==============GOOGLE HEADER SECTION START HERE========== -->
     <section class="text-center">
@@ -98,10 +113,10 @@
     <!-- ================FASHION IMAGES SECTION END HERE=================== -->
     <br><br>
     <!-- ==============BLOG DETAIL SECTION PART 1 END HERE========== -->
-    <section class="md:p-[3%] p-[5%]">
-      <div class="flex">
+    <section class="pc:p-[100px] p-[5%]">
+      <!-- <div class="flex">
         <div class="md:basis-9/12 basis-full">
-          <div class="grid md:grid-cols-3 grid-cols-2 gap-5">
+          <div class="flex gap-5">
             <p
               class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
             >
@@ -138,35 +153,76 @@
           </div>
           <hr class="w-[95%] text-text-color mt-2" />
         </div>
-      </div>
+      </div> -->
       <div class="flex lg:flex-row flex-col md:gap-10 gap-5">
-        <div class="basis-9/12">
+
+        <div class="basis-3/5">
+          <div class="flex">
+            <div class="basis-full">
+              <div class="flex gap-5">
+                <p
+                  class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                >
+                  Sep 2 , 2022
+                </p>
+                <div class="flex items-center gap-3">
+                  <div>
+                    <img
+                      src="../build/assets/imgs/circle.png"
+                      alt=""
+                      class="w-full"
+                    />
+                  </div>
+                  <p
+                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                  >
+                    By kashan Bhatti
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div>
+                    <img
+                      src="../build/assets/imgs/circle.png"
+                      alt=""
+                      class="w-full"
+                    />
+                  </div>
+                  <p
+                    class="nimbus font-semibold md:text-lg text-[12px] text-text-color leading-5"
+                  >
+                    Fashion
+                  </p>
+                </div>
+              </div>
+              <hr class=" text-text-color pc:mt-[13px] md:mt-3 mt-2" />
+            </div>
+          </div>
           <div class="pt-5">
             <h1 class="ogg md:text-5xl text-xl font-bold leading-10 text-black">
               FENDI <span class="font-normal">X</span>
               <span class="nimbus font-normal italic"> BENZEMA</span>
             </h1>
-            <p
-              class="nimbus font-thin md:text-lg text-[12px] text-text-color md:pt-3 pt-1 md:!leading-[46px] leading-5"
-            >
+            <p class="nimbus font-thin md:text-xl text-[12px] text-text-color md:leading-[36px] pc:leading-[36px] leading-5 capitalize pt-[10px]">
               The new Official FENDI Faster Ambassador, Benzema embodies the
               progressive spirit of the Maison's latest sneaker design – as a
               world-beating athlete with Real Madrid and recently UEFA Men’s
               Player of the Year, Karim is known as an exemplary player and a
               true professional, making the decorated striker an ideal
-              ambassador for the FENDI Faster. The new FENDI sneakers features a
-              technical fabrics and high-end athletic touches. <br />
+              ambassador for the FENDI Faster.
+            </p>
+            <p class="pc:leading-[52px] md:leading-[46px] leading-5 nimbus font-thin md:text-xl text-[12px] text-text-color md:pt-3 pt-[10px] capitalize">
+              The new FENDI sneakers features a
+              technical fabrics and high-end athletic touches.<br>
               The FENDI Faster is balanced by the characteristic luxury which
               the FENDI Maison brings to each of its designs. <br />
               In its finely-tuned performance and finely-honed detail, the FENDI
               Faster forms an ideal companion to Benzema's own unique and
               inimitable skill, style, and strong personality. <br />
               FENDI selected talents from the Middle East to join the Launch of
-              the new FENDI Faster
-            </p>
+              the new FENDI Faster</p>
           </div>
           <div
-            class="grid md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-7 grid-cols-2 gap-4 pt-5"
+            class="grid md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-7 grid-cols-2 gap-4 pc:pt-[78px] md:pt-12 pt-5"
           >
             <button
               class="py-2 text-text-color nimbus font-normal md:text-lg text-[12px] border border-text-color"
@@ -205,7 +261,7 @@
             </button>
           </div>
         </div>
-        <div class="basis-3/12 flex justify-center">
+        <div class="basis-2/5 flex pc:justify-end md:justify-center items-center">
           <div class="div">
             <img
               src="../build/assets/imgs/googleaddblog.png"
@@ -215,9 +271,8 @@
           </div>
         </div>
       </div>
-      <hr class="w-[100%] text-text-color mt-6" />
-      <br />
-      <div class="flex justify-center">
+      <hr class="w-[100%] text-text-color mt-[30px]" />
+      <div class="flex justify-center mt-[30px]">
         <button
           class="items-center gap-3 bg-bg-black flex py-3 text-text-white px-10 nimbus font-normal md:text-lg text-[12px] border border-black uppercase"
         >
@@ -438,6 +493,33 @@
 
 
 <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var searchButton = document.getElementById("searchButton");
+    var searchInput = document.getElementById("searchInput");
+    var searchContainer = document.getElementById("searchContainer");
+
+    searchButton.addEventListener("click", function() {
+      searchInput.classList.toggle("hidden");
+      searchButton.classList.add("hidden");
+    });
+
+    searchInput.addEventListener("blur", function() {
+      if (searchInput.value === "") {
+        searchInput.classList.add("hidden");
+        searchButton.classList.remove("hidden");
+      }
+     
+    });
+    searchButton.addEventListener("click", function() {
+      if (searchContainer.classList.contains("mr-16")) {
+                searchContainer.classList.remove("mr-16");
+                searchContainer.classList.add("mr-5");
+            } else {
+                searchContainer.classList.remove("mr-");
+                searchContainer.classList.add("mr-16");
+            }
+        });
+  });
   // Toggle mobile menu visibility
   document.getElementById('mobile-menu-btn').addEventListener('click', function () {
       document.getElementById('mobile-menu').classList.toggle('hidden');

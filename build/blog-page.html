@@ -10,56 +10,71 @@
     />
     </head>
     <body>
-     <!-- ======================NAVBAR START HERE=============== -->
-<div class="header bg-black text-center flex justify-center">
-    <div class="p-5">
-      <img src="./assets/imgs/Logo.png" alt="" class="h-[65px]">
-  
+ <!-- ======================NAVBAR START HERE=============== -->
+ <div class="md:flex hidden flex-col">
+  <div class=" bg-black text-center flex justify-center">
+    <div class="p-5 flex justify-center">
+      <a href="./index.html" class="flex justify-center"><img src="./assets/imgs/Logo.png" alt="" class="lg:w-full w-2/4" /></a>
     </div>
   </div>
-   <!-- Navigation Bar -->
-   <nav class="bg-black text-white p-4">
-  
-    <!-- Container for Centering -->
-    <div class="container mx-auto flex justify-between items-center">
-  
-        <!-- Navigation Links -->
-        <div class="flex items-center">
-          <input type="text" placeholder="Search..." class="p-2 border border-gray-700 rounded-md focus:outline-none">
-          <button class="ml-2 focus:outline-none">
-            <img src="./assets/imgs/search_icon.png" alt="">
-          </button>
+  <div class="flex justify-between bg-black items-center py-7">
+    <div class="basis-1/5"></div>
+    <div class="basis-3/5">
+      <ul class="flex text-white justify-between gap-9">
+        <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7">Fashion</a></li>
+        <li><a href="./blog-page.html" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
+        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
+        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
+        <li><a href="" class="uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+      </ul>
+    </div>
+    <div class="basis-1/5">
+      <div id="searchContainer" class="flex justify-end mr-16">
+        <button id="searchButton" class="focus:outline-none">
+          <img src="./assets/imgs/search_icon.png" alt="" />
+        </button>
+        <input type="text" id="searchInput" class="hidden  bg-white border border-gray-300 px-3 py-1 rounded-md md:w-full w-32 ml-5" placeholder="Search..." />
       </div>
-  
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-            <button id="mobile-menu-btn" class="text-xl focus:outline-none">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
+    </div>
+  </div>
+</div>
+  <!-- Navigation Bar -->
+  <nav class="bg-black text-white p-4 md:hidden flex">
+      <!-- Mobile Menu Button -->
+      <div class="flex justify-between items-center">
+        <div class="">
+          <a href="./index.html"><img src="./assets/imgs/Logo.png" alt="" class="w-2/5" /></a>
         </div>
-  
-        <!-- Navigation Links -->
-        <div class="hidden md:flex space-x-4">
-            <a href="#" class="hover:text-gray-300">Home</a>
-            <a href="./blog-page.html" class="hover:text-gray-300">About</a>
-            <a href="#" class="hover:text-gray-300">Services</a>
-            <a href="#" class="hover:text-gray-300">Contact</a>
+        <div class="">
+          <button id="mobile-menu-btn" class="text-xl focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
         </div>
-  
-    </div> <!-- End Container -->
-  
-  </nav> <!-- End Navigation Bar -->
-  
+      </div>
+  </nav>
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="md:hidden hidden bg-black text-white p-4">
-    <a href="#" class="block py-2">Home</a>
-    <a href="./blog-page.html" class="block py-2">About</a>
-    <a href="#" class="block py-2">Services</a>
-    <a href="#" class="block py-2">Contact</a>
+    <ul class="flex text-white justify-between flex-col text-center items-center">
+      <li><a href="./index.html" class="uppercase font-bold pc:text-[26px] md:text-xl  pc:leading-9 md:leading-7 block py-2">Fashion</a></li>
+      <li><a href="./blog-page.html" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Grooming</a></li>
+      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Lifestyle</a></li>
+      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Culture</a></li>
+      <li><a href="" class="block py-2 uppercase font-normal text-text-color pc:text-[26px] md:text-base  pc:leading-9 md:leading-7">Trends</a></li>
+        <input type="text" id="searchInput" class="  bg-white border border-gray-300 px-3 py-2 rounded-md w-full" placeholder="Search..." />
+    </ul>
   </div>
   <!-- ======================NAVBAR END HERE=============== -->
 
@@ -989,6 +1004,44 @@
     dropdownMenu.addEventListener("mouseleave", function() {
       dropdownMenu.classList.add("hidden");
     });
+  });
+</script>
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var searchButton = document.getElementById("searchButton");
+    var searchInput = document.getElementById("searchInput");
+    var searchContainer = document.getElementById("searchContainer");
+
+    searchButton.addEventListener("click", function() {
+      searchInput.classList.toggle("hidden");
+      searchButton.classList.add("hidden");
+    });
+
+    searchInput.addEventListener("blur", function() {
+      if (searchInput.value === "") {
+        searchInput.classList.add("hidden");
+        searchButton.classList.remove("hidden");
+      }
+     
+    });
+    searchButton.addEventListener("click", function() {
+      if (searchContainer.classList.contains("mr-16")) {
+                searchContainer.classList.remove("mr-16");
+                searchContainer.classList.add("mr-5");
+            } else {
+                searchContainer.classList.remove("mr-");
+                searchContainer.classList.add("mr-16");
+            }
+        });
+  });
+  // Toggle mobile menu visibility
+  document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
   });
 </script>
 
